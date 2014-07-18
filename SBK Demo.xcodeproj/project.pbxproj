@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		469F7FFE1978F4AA00A4B7D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469F7FFD1978F4AA00A4B7D4 /* Foundation.framework */; };
+		469F80001978F4AA00A4B7D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469F7FFF1978F4AA00A4B7D4 /* CoreGraphics.framework */; };
+		469F80021978F4AA00A4B7D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469F80011978F4AA00A4B7D4 /* UIKit.framework */; };
+		469F80081978F4AA00A4B7D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 469F80061978F4AA00A4B7D4 /* InfoPlist.strings */; };
+		469F800A1978F4AA00A4B7D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 469F80091978F4AA00A4B7D4 /* main.m */; };
+		469F800E1978F4AA00A4B7D4 /* SBKDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 469F800D1978F4AA00A4B7D4 /* SBKDAppDelegate.m */; };
+		469F80141978F4AA00A4B7D4 /* SBKDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 469F80131978F4AA00A4B7D4 /* SBKDViewController.m */; };
+		469F80161978F4AA00A4B7D4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 469F80151978F4AA00A4B7D4 /* Images.xcassets */; };
+		469F80401978F50100A4B7D4 /* libSensoroBeaconKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 469F803F1978F50100A4B7D4 /* libSensoroBeaconKit.a */; };
+		469F80441978F58B00A4B7D4 /* SBKDBeaconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 469F80421978F58B00A4B7D4 /* SBKDBeaconCell.m */; };
+		469F80451978F58B00A4B7D4 /* SBKDBeaconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 469F80431978F58B00A4B7D4 /* SBKDBeaconCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		469F7FFA1978F4AA00A4B7D4 /* SBK Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SBK Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		469F7FFD1978F4AA00A4B7D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		469F7FFF1978F4AA00A4B7D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		469F80011978F4AA00A4B7D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		469F80051978F4AA00A4B7D4 /* SBK Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SBK Demo-Info.plist"; sourceTree = "<group>"; };
+		469F80071978F4AA00A4B7D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		469F80091978F4AA00A4B7D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		469F800B1978F4AA00A4B7D4 /* SBK Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SBK Demo-Prefix.pch"; sourceTree = "<group>"; };
+		469F800C1978F4AA00A4B7D4 /* SBKDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBKDAppDelegate.h; sourceTree = "<group>"; };
+		469F800D1978F4AA00A4B7D4 /* SBKDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBKDAppDelegate.m; sourceTree = "<group>"; };
+		469F80121978F4AA00A4B7D4 /* SBKDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBKDViewController.h; sourceTree = "<group>"; };
+		469F80131978F4AA00A4B7D4 /* SBKDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBKDViewController.m; sourceTree = "<group>"; };
+		469F80151978F4AA00A4B7D4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		469F801C1978F4AA00A4B7D4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		469F803B1978F50100A4B7D4 /* SBKBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKBeacon.h; sourceTree = "<group>"; };
+		469F803C1978F50100A4B7D4 /* SBKBeaconID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKBeaconID.h; sourceTree = "<group>"; };
+		469F803D1978F50100A4B7D4 /* SBKBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKBeaconManager.h; sourceTree = "<group>"; };
+		469F803E1978F50100A4B7D4 /* SBKError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKError.h; sourceTree = "<group>"; };
+		469F803F1978F50100A4B7D4 /* libSensoroBeaconKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSensoroBeaconKit.a; sourceTree = "<group>"; };
+		469F80411978F58B00A4B7D4 /* SBKDBeaconCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKDBeaconCell.h; sourceTree = "<group>"; };
+		469F80421978F58B00A4B7D4 /* SBKDBeaconCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBKDBeaconCell.m; sourceTree = "<group>"; };
+		469F80431978F58B00A4B7D4 /* SBKDBeaconCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBKDBeaconCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		469F7FF71978F4AA00A4B7D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469F80401978F50100A4B7D4 /* libSensoroBeaconKit.a in Frameworks */,
+				469F80001978F4AA00A4B7D4 /* CoreGraphics.framework in Frameworks */,
+				469F80021978F4AA00A4B7D4 /* UIKit.framework in Frameworks */,
+				469F7FFE1978F4AA00A4B7D4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		469F7FF11978F4AA00A4B7D4 = {
+			isa = PBXGroup;
+			children = (
+				469F80391978F50100A4B7D4 /* Sensoro Beacon Kit */,
+				469F80031978F4AA00A4B7D4 /* SBK Demo */,
+				469F7FFC1978F4AA00A4B7D4 /* Frameworks */,
+				469F7FFB1978F4AA00A4B7D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		469F7FFB1978F4AA00A4B7D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				469F7FFA1978F4AA00A4B7D4 /* SBK Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		469F7FFC1978F4AA00A4B7D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				469F7FFD1978F4AA00A4B7D4 /* Foundation.framework */,
+				469F7FFF1978F4AA00A4B7D4 /* CoreGraphics.framework */,
+				469F80011978F4AA00A4B7D4 /* UIKit.framework */,
+				469F801C1978F4AA00A4B7D4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		469F80031978F4AA00A4B7D4 /* SBK Demo */ = {
+			isa = PBXGroup;
+			children = (
+				469F80411978F58B00A4B7D4 /* SBKDBeaconCell.h */,
+				469F80421978F58B00A4B7D4 /* SBKDBeaconCell.m */,
+				469F80431978F58B00A4B7D4 /* SBKDBeaconCell.xib */,
+				469F800C1978F4AA00A4B7D4 /* SBKDAppDelegate.h */,
+				469F800D1978F4AA00A4B7D4 /* SBKDAppDelegate.m */,
+				469F80121978F4AA00A4B7D4 /* SBKDViewController.h */,
+				469F80131978F4AA00A4B7D4 /* SBKDViewController.m */,
+				469F80151978F4AA00A4B7D4 /* Images.xcassets */,
+				469F80041978F4AA00A4B7D4 /* Supporting Files */,
+			);
+			path = "SBK Demo";
+			sourceTree = "<group>";
+		};
+		469F80041978F4AA00A4B7D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				469F80051978F4AA00A4B7D4 /* SBK Demo-Info.plist */,
+				469F80061978F4AA00A4B7D4 /* InfoPlist.strings */,
+				469F80091978F4AA00A4B7D4 /* main.m */,
+				469F800B1978F4AA00A4B7D4 /* SBK Demo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		469F80391978F50100A4B7D4 /* Sensoro Beacon Kit */ = {
+			isa = PBXGroup;
+			children = (
+				469F803A1978F50100A4B7D4 /* Headers */,
+				469F803F1978F50100A4B7D4 /* libSensoroBeaconKit.a */,
+			);
+			path = "Sensoro Beacon Kit";
+			sourceTree = "<group>";
+		};
+		469F803A1978F50100A4B7D4 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				469F803B1978F50100A4B7D4 /* SBKBeacon.h */,
+				469F803C1978F50100A4B7D4 /* SBKBeaconID.h */,
+				469F803D1978F50100A4B7D4 /* SBKBeaconManager.h */,
+				469F803E1978F50100A4B7D4 /* SBKError.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		469F7FF91978F4AA00A4B7D4 /* SBK Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 469F802C1978F4AA00A4B7D4 /* Build configuration list for PBXNativeTarget "SBK Demo" */;
+			buildPhases = (
+				469F7FF61978F4AA00A4B7D4 /* Sources */,
+				469F7FF71978F4AA00A4B7D4 /* Frameworks */,
+				469F7FF81978F4AA00A4B7D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SBK Demo";
+			productName = "SBK Demo";
+			productReference = 469F7FFA1978F4AA00A4B7D4 /* SBK Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		469F7FF21978F4AA00A4B7D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SBKD;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Sensoro Inc.";
+			};
+			buildConfigurationList = 469F7FF51978F4AA00A4B7D4 /* Build configuration list for PBXProject "SBK Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 469F7FF11978F4AA00A4B7D4;
+			productRefGroup = 469F7FFB1978F4AA00A4B7D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				469F7FF91978F4AA00A4B7D4 /* SBK Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		469F7FF81978F4AA00A4B7D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469F80161978F4AA00A4B7D4 /* Images.xcassets in Resources */,
+				469F80081978F4AA00A4B7D4 /* InfoPlist.strings in Resources */,
+				469F80451978F58B00A4B7D4 /* SBKDBeaconCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		469F7FF61978F4AA00A4B7D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				469F800E1978F4AA00A4B7D4 /* SBKDAppDelegate.m in Sources */,
+				469F800A1978F4AA00A4B7D4 /* main.m in Sources */,
+				469F80141978F4AA00A4B7D4 /* SBKDViewController.m in Sources */,
+				469F80441978F58B00A4B7D4 /* SBKDBeaconCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		469F80061978F4AA00A4B7D4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				469F80071978F4AA00A4B7D4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		469F802A1978F4AA00A4B7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		469F802B1978F4AA00A4B7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		469F802D1978F4AA00A4B7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SBK Demo/SBK Demo-Prefix.pch";
+				INFOPLIST_FILE = "SBK Demo/SBK Demo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SBK",
+					Demo,
+					"$(PROJECT_DIR)/Sensoro",
+					Beacon,
+					Kit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		469F802E1978F4AA00A4B7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SBK Demo/SBK Demo-Prefix.pch";
+				INFOPLIST_FILE = "SBK Demo/SBK Demo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SBK",
+					Demo,
+					"$(PROJECT_DIR)/Sensoro",
+					Beacon,
+					Kit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		469F7FF51978F4AA00A4B7D4 /* Build configuration list for PBXProject "SBK Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				469F802A1978F4AA00A4B7D4 /* Debug */,
+				469F802B1978F4AA00A4B7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		469F802C1978F4AA00A4B7D4 /* Build configuration list for PBXNativeTarget "SBK Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				469F802D1978F4AA00A4B7D4 /* Debug */,
+				469F802E1978F4AA00A4B7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 469F7FF21978F4AA00A4B7D4 /* Project object */;
+}
