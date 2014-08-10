@@ -49,30 +49,17 @@ typedef NS_ENUM(int, SBKBeaconTransmitPower) {
  *  Constants to indicate advertising interval.
  */
 typedef NS_ENUM(int, SBKBeaconAdvertisingInterval) {
-    /**
-     *  The interval is unknown.
-     */
-    SBKBeaconAdvertisingIntervalUnknown = 0,
-    /**
-     *  Means advertising frequency is highest. This may causes your battery to drain quickly.
-     */
-    SBKBeaconAdvertisingIntervalMin,
-    /**
-     *  Means advertising frequency is high.
-     */
-    SBKBeaconAdvertisingIntervalLow,
-    /**
-     *  Means advertising frequency is medium. This is the default value.
-     */
-    SBKBeaconAdvertisingIntervalMedium,
-    /**
-     *  Means advertising frequency is low.
-     */
-    SBKBeaconAdvertisingIntervalHigh,
-    /**
-     *  Means advertising frequency is lowest. This is the most power saving option.
-     */
-    SBKBeaconAdvertisingIntervalMax
+    SBKBeaconAdvertisingIntervalUnknown = 0xff,
+    SBKBeaconAdvertisingInterval_100 = 0x00,
+    SBKBeaconAdvertisingInterval_152_5 = 0x01,
+    SBKBeaconAdvertisingInterval_211_25 = 0x02,
+    SBKBeaconAdvertisingInterval_318_75 = 0x03,
+    SBKBeaconAdvertisingInterval_417_5 = 0x04,
+    SBKBeaconAdvertisingInterval_546_25 = 0x05,
+    SBKBeaconAdvertisingInterval_760 = 0x06,
+    SBKBeaconAdvertisingInterval_852_5 = 0x07,
+    SBKBeaconAdvertisingInterval_1022_5 = 0x08,
+    SBKBeaconAdvertisingInterval_1285 = 0x09
 };
 
 #define SBKBeaconAdvertisingIntervalDefault SBKBeaconAdvertisingIntervalMedium
@@ -144,7 +131,7 @@ typedef NS_ENUM(int, SBKBeaconWritePermissionStatus){
 /**
  *  Constants to indicate energy saving mode.
  */
-typedef NS_OPTIONS(u_int8_t, SBKBeaconEnergySavingMode) {
+typedef NS_OPTIONS(int, SBKBeaconEnergySavingMode) {
     /**
      *  Do not use any energy saving mode.
      */
@@ -204,7 +191,7 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
 /**
  *  The received signal strength of the beacon, measured in decibels. (read-only)
  *  
- *  @discussion If beacon is out of range, the value will be NSIntegerMin.
+ *  @discussion If beacon is out of range, the value will be 0.
  */
 @property (readonly, nonatomic, assign) NSInteger rssi;
 
@@ -214,6 +201,13 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
  *  @discussion The value in this property gives a general sense of the relative distance to the beacon. Use it to quickly identify beacons that are nearer to the user rather than farther away.
  */
 @property (readonly, nonatomic, assign) CLProximity proximity;
+
+/**
+ *  The accuracy of the proximity value, measured in meters from the beacon. (read-only)
+ *
+ *  @discussion Indicates the one sigma horizontal accuracy in meters. Use this property to differentiate between beacons with the same proximity value. Do not use it to identify a precise location for the beacon. Accuracy values may fluctuate due to RF interference. A negative value in this property signifies that the actual accuracy could not be determined.
+ */
+@property (readonly, nonatomic) CLLocationAccuracy accuracy;
 
 /**
  *  The battery charge level for the device. (read-only)
@@ -360,6 +354,10 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
  */
 - (BOOL)updateWritePassword:(NSString *)password completion:(SBKBeaconCompletionBlock)completion;
 
+/**
+ *  @return Which energy saving mode the beacon supports.
+ */
+- (SBKBeaconEnergySavingMode)availableEnergySavingMode;
 
 /**---------------------------------------------------------------------------------------
  * @name Temperature, Light and Accelerometer Sensor
@@ -375,29 +373,48 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
  */
 - (BOOL)reloadSensorDataWithCompletion:(SBKBeaconCompletionBlock)completion;
 
+/**
+ *  @return Flag indicating whether temperature sensor is available.
+ */
 - (BOOL)isTemperatureSensorAvailable;
+
+/**
+ *  @return Flag indicating whether light sensor is available.
+ */
 - (BOOL)isLightSensorAvailable;
+
+/**
+ *  @return Flag indicating whether accelerometer sensor is available.
+ */
 - (BOOL)isAccelerometerAvailable;
 
 /**
  *  Temperature value in Celsius
+ *
+ *  @discussion Sensor data can only be updated when the app is running in the foreground.
  */
 @property (readonly, nonatomic, copy) NSNumber * temperature;
 
 /**
  *  The ambient light level in lux.
+ *
+ *  @discussion Sensor data can only be updated when the app is running in the foreground.
  */
 @property (readonly, nonatomic, copy) NSNumber * light;
 
 /**
  *  The number of accelerometer count.
+ *
+ *  @discussion Sensor data can only be updated when the app is running in the foreground.
  */
 @property (readonly, nonatomic, copy) NSNumber * accelerometerCount;
 
 /**
  *  Flag indicating accelerometer state, boolean value wrapped in NSNumber.
+ *
+ *  @discussion Sensor data can only be updated when the app is running in the foreground.
  */
-@property (readonly, nonatomic, copy) NSNumber * isMoving;
+@property (readonly, nonatomic, copy, getter = isMoving) NSNumber * moving;
 
 /**
  *  Resets accelerometer counter value to zero.

@@ -90,7 +90,7 @@
 /**
  *  Get the beacon instances in range now.
  *
- *  @return Beacon instances in array, sorted by RSSI.
+ *  @return Beacon instances in array, sorted by accuracy.
  */
 - (NSArray *)beaconsInRange;
 /**
@@ -111,6 +111,8 @@
  * @discussion In order to prevent notifications delivering too frequently, beacon will not be marked out of range immediately. Default value is 8 seconds, means a beacon will be marked out of range if it can not be ranged in last 8 seconds.
  */
 @property (readwrite, nonatomic) NSTimeInterval outOfRangeDelay;
+
+- (void)setDebugModeActive:(BOOL)active;
 
 @end
 
@@ -146,7 +148,7 @@
  *  Tells the delegate that if one or more beacons are in range. This method will be called approximate every one second, even there is not beacon around.
  *
  *  @param beaconManager The beacon manager object reporting the event.
- *  @param beacons       An array of CLBeacon objects representing the beacons currently in range. You can use the information in these objects to determine the range of each beacon and its identifying information.
+ *  @param beacons       An array of SBKBeacon objects representing the beacons currently in range. You can use the information in these objects to determine the range of each beacon and its identifying information.
  */
 - (void)beaconManager:(SBKBeaconManager *)beaconManager scanDidFinishWithBeacons:(NSArray *)beacons;
 

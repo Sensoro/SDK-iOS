@@ -303,11 +303,7 @@
 				INFOPLIST_FILE = "SBK Demo/SBK Demo-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/SBK",
-					Demo,
-					"$(PROJECT_DIR)/Sensoro",
-					Beacon,
-					Kit,
+					"\"$(PROJECT_DIR)/Sensoro Beacon Kit\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -324,11 +320,7 @@
 				INFOPLIST_FILE = "SBK Demo/SBK Demo-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/SBK",
-					Demo,
-					"$(PROJECT_DIR)/Sensoro",
-					Beacon,
-					Kit,
+					"\"$(PROJECT_DIR)/Sensoro Beacon Kit\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -354,6 +346,7 @@
 				469F802E1978F4AA00A4B7D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
