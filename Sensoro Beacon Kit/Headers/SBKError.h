@@ -28,11 +28,6 @@ enum {
     SBKErrorConnectionFailed = 10000,
 
     /**
-     *  The connection time out.
-     */
-    SBKErrorConnectionTimeout = 10001,
-
-    /**
      *  Unexpected disconnection occurred.
      */
     SBKErrorUnexpectedDisconnect = 10010,

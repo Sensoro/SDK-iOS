@@ -112,6 +112,8 @@
  */
 @property (readwrite, nonatomic) NSTimeInterval outOfRangeDelay;
 
+@property (readwrite, nonatomic) BOOL disableAdvancedFeatures;
+
 - (void)setDebugModeActive:(BOOL)active;
 
 @end
