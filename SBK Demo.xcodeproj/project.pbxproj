@@ -43,7 +43,7 @@
 		469F80411978F58B00A4B7D4 /* SBKDBeaconCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKDBeaconCell.h; sourceTree = "<group>"; };
 		469F80421978F58B00A4B7D4 /* SBKDBeaconCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBKDBeaconCell.m; sourceTree = "<group>"; };
 		469F80431978F58B00A4B7D4 /* SBKDBeaconCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBKDBeaconCell.xib; sourceTree = "<group>"; };
-		46B23C4719A8AC520022377A /* SBKConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SBKConstants.h; path = "../../../Sensoro Beacon Kit/release/SensoroBeaconKit-1.0.0/Headers/SBKConstants.h"; sourceTree = "<group>"; };
+		46C2460F19B1DAAB00FE4F90 /* SBKConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBKConstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +129,7 @@
 		469F803A1978F50100A4B7D4 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				46B23C4719A8AC520022377A /* SBKConstants.h */,
+				46C2460F19B1DAAB00FE4F90 /* SBKConstants.h */,
 				469F803B1978F50100A4B7D4 /* SBKBeacon.h */,
 				469F803C1978F50100A4B7D4 /* SBKBeaconID.h */,
 				469F803D1978F50100A4B7D4 /* SBKBeaconManager.h */,
