@@ -43,6 +43,9 @@
  *  ---------------------------------------------------------------------------------------
  */
 
+- (void)requestAlwaysAuthorization;
+- (void)requestWhenInUseAuthorization;
+
 /**
  *  Starts the delivery of notifications for beacons with specified id.
  *
@@ -153,5 +156,7 @@
  *  @param beacons       An array of SBKBeacon objects representing the beacons currently in range. You can use the information in these objects to determine the range of each beacon and its identifying information.
  */
 - (void)beaconManager:(SBKBeaconManager *)beaconManager scanDidFinishWithBeacons:(NSArray *)beacons;
+
+- (void)beaconManager:(SBKBeaconManager *)beaconManager didChangeAuthorizationStatus:(CLAuthorizationStatus)status;
 
 @end

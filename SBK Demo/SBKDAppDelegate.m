@@ -18,6 +18,8 @@
     [[SBKBeaconManager sharedInstance] startRangingBeaconsWithID:beaconID
                                                wakeUpApplication:NO];
 
+    [[SBKBeaconManager sharedInstance] requestAlwaysAuthorization];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[SBKDViewController alloc] initWithStyle:UITableViewStylePlain]];

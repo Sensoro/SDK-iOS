@@ -58,7 +58,8 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
 @property (readonly, nonatomic, assign) BOOL inRange;
 
 
-@property (readwrite, nonatomic, assign) NSInteger inRangeMinimumRssi;
+@property (readwrite, nonatomic, assign) NSInteger inRangeMinimumRssiWhileEntering;
+@property (readwrite, nonatomic, assign) NSInteger inRangeMinimumRssiWhileLeaving;
 
 /**
  *  The received signal strength of the beacon, measured in decibels. (read-only)
