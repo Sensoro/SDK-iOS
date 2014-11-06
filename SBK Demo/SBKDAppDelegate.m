@@ -18,8 +18,8 @@
     [[SBKBeaconManager sharedInstance] startRangingBeaconsWithID:beaconID
                                                wakeUpApplication:NO];
 
-    //[[SBKBeaconManager sharedInstance] requestAlwaysAuthorization];
-    [[SBKBeaconManager sharedInstance] requestWhenInUseAuthorization];
+    [[SBKBeaconManager sharedInstance] requestAlwaysAuthorization];
+    //[[SBKBeaconManager sharedInstance] requestWhenInUseAuthorization];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];

@@ -167,6 +167,11 @@
 				CLASSPREFIX = SBKD;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Sensoro Inc.";
+				TargetAttributes = {
+					469F7FF91978F4AA00A4B7D4 = {
+						DevelopmentTeam = 8E42QMX22R;
+					};
+				};
 			};
 			buildConfigurationList = 469F7FF51978F4AA00A4B7D4 /* Build configuration list for PBXProject "SBK Demo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -300,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SBK Demo/SBK Demo-Prefix.pch";
 				INFOPLIST_FILE = "SBK Demo/SBK Demo-Info.plist";
@@ -317,6 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SBK Demo/SBK Demo-Prefix.pch";
 				INFOPLIST_FILE = "SBK Demo/SBK Demo-Info.plist";
