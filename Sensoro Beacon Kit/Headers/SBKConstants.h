@@ -169,3 +169,41 @@ typedef NS_OPTIONS(int, SBKBeaconEnergySavingMode) {
     SBKBeaconEnergySavingModeLightSensor = 1 << 0
 };
 
+
+/**
+ *  Constants to indicate secure broadcast change interval.
+ */
+typedef NS_OPTIONS(int, SBKBeaconSecureBroadcastInterval) {
+    /**
+     *  THe secure broadcast is unknown.
+     */
+    SBKBeaconSecureBroadcastIntervalUnknown = -1,
+    /**
+     *  Do not use secure broadcast.
+     */
+    SBKBeaconSecureBroadcastIntervalNone = 0,
+    /**
+     *  The secure broadcast interval is 5s.
+     */
+    SBKBeaconSecureBroadcastInterval_5s = 0x01,
+    /**
+     *  The secure broadcast interval is 1 minute.
+     */
+    SBKBeaconSecureBroadcastInterval_1min = 0x02,
+    /**
+     *  The secure broadcast interval is 1 hour.
+     */
+    SBKBeaconSecureBroadcastInterval_1hour = 0x03,
+    /**
+     *  The secure broadcast interval is 1 day.
+     */
+    SBKBeaconSecureBroadcastInterval_1day = 0x04,
+    /**
+     *  The secure broadcast interval is a week.
+     */
+    SBKBeaconSecureBroadcastInterval_7days = 0x05,
+    /**
+     *  The secure broadcast interval is 30 days.
+     */
+    SBKBeaconSecureBroadcastInterval_30days = 0x06,
+};

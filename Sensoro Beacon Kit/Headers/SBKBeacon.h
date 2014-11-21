@@ -14,6 +14,7 @@
 
 extern NSString * const SBKBeaconInRangeStatusUpdatedNotification;
 
+/// the block as a callback when app communicate with beacon
 typedef void (^SBKBeaconCompletionBlock)(NSError *error);
 
 @protocol SBKBeaconDelegate;
@@ -57,8 +58,18 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
  */
 @property (readonly, nonatomic, assign) BOOL inRange;
 
-
+/**
+ *  the rssi value to decide if entering range of beacon.
+ *
+ * @discussion  if received rssi is larger than this value, it is in range of this beacon.
+ */
 @property (readwrite, nonatomic, assign) NSInteger inRangeMinimumRssiWhileEntering;
+
+/**
+ *  the rssi value to decide if leaving range of beacon.
+ *
+ * @discussion  if received rssi is less than this value, it is out of range of this beacon.
+ */
 @property (readwrite, nonatomic, assign) NSInteger inRangeMinimumRssiWhileLeaving;
 
 /**
@@ -146,6 +157,13 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
 @property (readonly, nonatomic) NSDictionary *sensorSettings;
 
 /**
+ *  The value of sensor umm change interval attributes. (read-only)
+ *
+ *  you can change value, @see writeSecureBroadcastInterval:completion:
+ */
+@property (readonly, nonatomic) SBKBeaconSecureBroadcastInterval secureBroadcastInterval;
+
+/**
  *  Updates proximity UUID of this beacon.
  *
  *  @param proximityUUID Proximity UUID in NSUUID object.
@@ -194,6 +212,17 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
  *  @return Can this writing operation be executed.
  */
 - (BOOL)resetToFactorySettingsWithCompletion:(SBKBeaconCompletionBlock)completion;
+
+
+/**
+ *  Updates UMM Change interval.
+ *
+ *  @param interval The Secure Broadcast change interval. it is enum of SBKBeaconSecureBroadcastInterval;
+ *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+ *
+ *  @return Can this writing operation be executed.
+ */
+- (BOOL)writeSecureBroadcastInterval:(SBKBeaconSecureBroadcastInterval)interval completion:(SBKBeaconCompletionBlock)completion;
 
 /**---------------------------------------------------------------------------------------
  * @name Writing Authorization
@@ -374,11 +403,34 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
 
 @end
 
+/// Constants
+
+/**
+ *  the Key for the Transmit Power in base setting dictionary.
+ */
 extern NSString * const SBKBeaconBaseSettingsTransmitPowerKey;
+/**
+ *  the Key for the Advertising Interval in base setting dictionary.
+ */
 extern NSString * const SBKBeaconBaseSettingsAdvertisingIntervalKey;
+/**
+ *  the Key for the Energy Saving Mode in base setting dictionary.
+ */
 extern NSString * const SBKBeaconBaseSettingsEnergySavingModeKey;
+/**
+ *  the Key for the Measure Power in base setting dictionary.
+ */
 extern NSString * const SBKBeaconBaseSettingsMeasuredPowerKey;
 
+/**
+ *  the Key for the Temperature Sampling Interval in sensoro setting dictionary.
+ */
 extern NSString * const SBKBeaconSensorSettingsTemperatureSamplingIntervalKey;
+/**
+ *  the Key for the Light Sampling Interval in sensoro setting dictionary.
+ */
 extern NSString * const SBKBeaconSensorSettingsLightSamplingIntervalKey;
+/**
+ *  the Key for the Accelerometer Sensitivity in sensoro setting dictionary.
+ */
 extern NSString * const SBKBeaconSensorSettingsAccelerometerSensitivityKey;

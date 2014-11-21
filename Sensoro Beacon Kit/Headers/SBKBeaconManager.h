@@ -43,7 +43,22 @@
  *  ---------------------------------------------------------------------------------------
  */
 
+/**
+ *  Requests permission to use location services whenever the app is running.
+ *
+ *  @discussion When the current authorization status is kCLAuthorizationStatusNotDetermined, calling this method prompts the user to grant permission to the app to use location services.The user prompt contains the text from the NSLocationAlwaysUsageDescription key in your app’s Info.plist file, and the presence of that key is required when calling this method. You must call this method or the requestWhenInUseAuthorization method prior to using location services. If the current authorization status is anything other than kCLAuthorizationStatusNotDetermined, this method does nothing.
+ *  for detail [Apple's requestAlwaysAuthorization](https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/index.html#//apple_ref/occ/instm/CLLocationManager/requestAlwaysAuthorization)
+ *
+ */
 - (void)requestAlwaysAuthorization;
+
+/**
+ *  Requests permission to use location services while the app is in the foreground.
+ *
+ *  When the current authorization status is kCLAuthorizationStatusNotDetermined, calling this method prompts the user to grant permission to the app to use location services. The user prompt contains the text from the NSLocationWhenInUseUsageDescription key in your app’s Info.plist file, and the presence of that key is required when calling this method. You must call this method or the requestAlwaysAuthorization method prior to using location services. If the current authorization status is anything other than kCLAuthorizationStatusNotDetermined, this method does nothing.
+ *  for detail [Apple's requestWhenInUseAuthorization](https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/index.html#//apple_ref/occ/instm/CLLocationManager/requestWhenInUseAuthorization)
+ *
+ */
 - (void)requestWhenInUseAuthorization;
 
 /**
@@ -115,6 +130,12 @@
  */
 @property (readwrite, nonatomic) NSTimeInterval outOfRangeDelay;
 
+/**
+ * Disable the advanced feature.
+ *
+ * @discussion the SDK use the bluetooth feature to get temperature, light, battery level etc. if disable 
+    this feature, those value will be unavailable.
+ */
 @property (readwrite, nonatomic) BOOL disableAdvancedFeatures;
 
 - (void)setDebugModeActive:(BOOL)active;
@@ -157,6 +178,13 @@
  */
 - (void)beaconManager:(SBKBeaconManager *)beaconManager scanDidFinishWithBeacons:(NSArray *)beacons;
 
+/**
+ *  Tells the delegate that the authorization status for the application changed.
+ *
+ *  @param beaconManager The beacon manager object reporting the event.
+ *  @param status        The new authorization status for the application.
+ *  @discussion This method is called whenever the application’s ability to use location services changes. Changes can occur because the user allowed or denied the use of location services for your application or for the system as a whole.
+ */
 - (void)beaconManager:(SBKBeaconManager *)beaconManager didChangeAuthorizationStatus:(CLAuthorizationStatus)status;
 
 @end
