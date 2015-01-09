@@ -248,14 +248,22 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
 - (BOOL)clearBroadcastKeyWithCompletion:(SBKBeaconCompletionBlock)completion;
 
 /**
- *  Set device whether it is as beacon. if state was NO, the device is just a sensor.
+ *  Disable the iBeacon broadcast.
  *
- *  @param state indicate whether the device is as beacon, if NO, the device is just a sensor,
  *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
  *
  *  @return Can this writing operation be executed.
  */
-- (BOOL)disableiBeacon:(BOOL) state completion:(SBKBeaconCompletionBlock)completion;
+- (BOOL)disableiBeaconWithCompletion:(SBKBeaconCompletionBlock)completion;
+
+/**
+ *  Open the iBeacon broadcast.
+ *
+ *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+ *
+ *  @return Can this writing operation be executed.
+ */
+- (BOOL)enableiBeaconWithCompletion:(SBKBeaconCompletionBlock)completion;
 
 /**---------------------------------------------------------------------------------------
  * @name Writing Authorization

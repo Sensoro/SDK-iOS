@@ -86,14 +86,7 @@
  *
  *  @param secretInfo the secret info.
  */
-- (BOOL)addSecretInfo:(NSString *)secretInfo;
-
-/**
- *  Remove the secret info from manager.
- *
- *  @param secretInfo the secret info.
- */
-- (BOOL)removeSecretInfo:(NSString *)secretInfo;
+- (BOOL)addBroadcastKey:(NSString *)secretInfo;
 
 /**
  *  The set of SBKBeaconID currently being ranged.
