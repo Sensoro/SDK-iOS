@@ -15,5 +15,7 @@
 @property (nonatomic, strong) IBOutlet UILabel *detailLabel;
 
 @property (nonatomic, strong) IBOutlet UIImageView *dotImageView;
+@property (weak, nonatomic) IBOutlet UILabel *deviceInfo;
+@property (weak, nonatomic) IBOutlet UILabel *sensorInfo;
 
 @end

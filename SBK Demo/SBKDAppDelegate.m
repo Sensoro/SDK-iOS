@@ -16,7 +16,7 @@
 {
     SBKBeaconID *beaconID = [SBKBeaconID beaconIDWithProximityUUID:SBKSensoroDefaultProximityUUID];
     [[SBKBeaconManager sharedInstance] startRangingBeaconsWithID:beaconID
-                                               wakeUpApplication:NO];
+                                               wakeUpApplication:YES];
 
     [[SBKBeaconManager sharedInstance] requestAlwaysAuthorization];
     //[[SBKBeaconManager sharedInstance] requestWhenInUseAuthorization];

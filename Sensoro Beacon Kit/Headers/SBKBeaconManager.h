@@ -82,6 +82,20 @@
 - (void)stopRangingAllBeacons;
 
 /**
+ *  Set the secret info to decrypt the broadcast info.
+ *
+ *  @param secretInfo the secret info.
+ */
+- (BOOL)addSecretInfo:(NSString *)secretInfo;
+
+/**
+ *  Remove the secret info from manager.
+ *
+ *  @param secretInfo the secret info.
+ */
+- (BOOL)removeSecretInfo:(NSString *)secretInfo;
+
+/**
  *  The set of SBKBeaconID currently being ranged.
  *
  *  @return The objects in the set are instances of the SBKBeaconID class
@@ -105,6 +119,7 @@
  *  @warning The SBKBeaconID object must have major and minor properties.
  */
 - (SBKBeacon *)beaconWithID:(SBKBeaconID *)beaconID;
+
 /**
  *  Get the beacon instances in range now.
  *
@@ -130,13 +145,7 @@
  */
 @property (readwrite, nonatomic) NSTimeInterval outOfRangeDelay;
 
-/**
- * Disable the advanced feature.
- *
- * @discussion the SDK use the bluetooth feature to get temperature, light, battery level etc. if disable 
-    this feature, those value will be unavailable.
- */
-@property (readwrite, nonatomic) BOOL disableAdvancedFeatures;
+@property (readonly, nonatomic) NSString* version;
 
 - (void)setDebugModeActive:(BOOL)active;
 

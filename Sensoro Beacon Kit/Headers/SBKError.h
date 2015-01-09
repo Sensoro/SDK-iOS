@@ -36,6 +36,16 @@ enum {
      *  The attribute’s value cannot be written.
      */
     SBKErrorWriteNotPermitted = 11000,
+    
+    /**
+     *  Unsupport feature.
+     */
+    SBKErrorUnsupport = 11010,
+    
+    /**
+     *  Indicates that the data is not valid.
+     */
+    SBKErrorInvalidData = 11020,
 
     /**
      *  Authorization failed.

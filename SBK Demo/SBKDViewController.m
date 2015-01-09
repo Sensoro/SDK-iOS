@@ -38,7 +38,7 @@ static NSString *CellIdentifier = @"SBKDBeaconCell";
 
     [self.tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:nil]
          forCellReuseIdentifier:CellIdentifier];
-    self.tableView.rowHeight = 70;
+    self.tableView.rowHeight = 112;
     self.tableView.allowsSelection = NO;
 
     [SBKBeaconManager sharedInstance].delegate = self;
@@ -46,12 +46,14 @@ static NSString *CellIdentifier = @"SBKDBeaconCell";
 
 - (void)beaconManager:(SBKBeaconManager *)beaconManager didRangeNewBeacon:(SBKBeacon *)beacon {
     [_beacons addObject:beacon];
+    //NSLog(@"Enter new beacon %@",beacon.beaconID.stringRepresentation);
     [self.tableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:_beacons.count - 1 inSection:0]]
                           withRowAnimation:UITableViewRowAnimationFade];
 }
 
 - (void)beaconManager:(SBKBeaconManager *)beaconManager beaconDidGone:(SBKBeacon *)beacon {
     [_beacons removeObject:beacon];
+    //NSLog(@"Leave a beacon %@",beacon.beaconID.stringRepresentation);
     [self.tableView deleteRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:_beacons.count inSection:0]]
                           withRowAnimation:UITableViewRowAnimationFade];
 }
@@ -78,6 +80,9 @@ static NSString *CellIdentifier = @"SBKDBeaconCell";
                              beacon.hardwareModelName ?: @"Unknown",
                              (int)beacon.rssi];
 
+    cell.deviceInfo.text = [NSString stringWithFormat:@"hardware: %@ firmware %@",
+                            beacon.hardwareModelName,beacon.firmwareVersion];
+    
     if (beacon.inRange) {
         if (beacon.proximity != CLProximityUnknown) {
             [cell.dotImageView setImage:[UIImage imageNamed:@"dot_green"]];

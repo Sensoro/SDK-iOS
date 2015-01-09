@@ -26,6 +26,10 @@
 	<true/>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>本软件需要授权使用位置服务，以发现周围的beacon</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

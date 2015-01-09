@@ -110,6 +110,11 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
  */
 @property (readonly, nonatomic, copy) NSString * firmwareVersion;
 
+/**
+ *  The current work model for the device. (read-only)
+ */
+@property (readonly, nonatomic) SBKBeaconWorkMode workModel;
+
 /**---------------------------------------------------------------------------------------
  * @name Establishing or Canceling Connections with Beacon
  *  ---------------------------------------------------------------------------------------
@@ -213,16 +218,44 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
  */
 - (BOOL)resetToFactorySettingsWithCompletion:(SBKBeaconCompletionBlock)completion;
 
-
 /**
  *  Updates UMM Change interval.
  *
- *  @param interval The Secure Broadcast change interval. it is enum of SBKBeaconSecureBroadcastInterval;
+ *  @param interval The Secure Broadcast change interval. it is enum of @see SBKBeaconSecureBroadcastInterval;
  *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
  *
  *  @return Can this writing operation be executed.
  */
 - (BOOL)writeSecureBroadcastInterval:(SBKBeaconSecureBroadcastInterval)interval completion:(SBKBeaconCompletionBlock)completion;
+
+/**
+ *  Updates the key to encrypt the broadcast packet.
+ *
+ *  @param key the key to encrypt the broadcast packet;
+ *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+ *
+ *  @return Can this writing operation be executed.
+ */
+- (BOOL)writeBroadcastKey:(NSString*) key completion:(SBKBeaconCompletionBlock)completion;
+
+/**
+ *  Clear the key to encrypt the broadcast packet.
+ *
+ *  @param completion The block to execute after the clear is completed. If error parameter is nil means writing successfully.
+ *
+ *  @return Can this clear operation be executed.
+ */
+- (BOOL)clearBroadcastKeyWithCompletion:(SBKBeaconCompletionBlock)completion;
+
+/**
+ *  Set device whether it is as beacon. if state was NO, the device is just a sensor.
+ *
+ *  @param state indicate whether the device is as beacon, if NO, the device is just a sensor,
+ *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+ *
+ *  @return Can this writing operation be executed.
+ */
+- (BOOL)disableiBeacon:(BOOL) state completion:(SBKBeaconCompletionBlock)completion;
 
 /**---------------------------------------------------------------------------------------
  * @name Writing Authorization
@@ -255,6 +288,15 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
  *  @return Can this writing operation be executed.
  */
 - (BOOL)updateWritePassword:(NSString *)password completion:(SBKBeaconCompletionBlock)completion;
+
+/**
+ *  Clear the beacon's password.
+ *
+ *  @param completion The block to execute after the writing is completed. If error parameter is nil means clear successfully.
+ *
+ *  @return Can this clear operation be executed.
+ */
+- (BOOL)clearWritePasswordWithCompletion:(SBKBeaconCompletionBlock)completion;
 
 /**
  *  @return Which energy saving mode the beacon supports.
@@ -291,6 +333,16 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
 - (BOOL)isAccelerometerAvailable;
 
 /**
+ *  @return Flag indicating whether this beacon has beacon information, uuid, major, minor, proximity, accuracy etc..
+ */
+- (BOOL)isBeacon;
+
+/**
+ *  @return Flag indicating whether this beacon has sensor information, temprature, light, accelerometer etc..
+ */
+- (BOOL)isSensor;
+
+/**
  *  Temperature value in Celsius
  *
  *  @discussion Sensor data can only be updated when the app is running in the foreground.
@@ -303,6 +355,28 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
  *  @discussion Sensor data can only be updated when the app is running in the foreground.
  */
 @property (readonly, nonatomic, copy) NSNumber * light;
+
+/**
+ *
+ *  The broadcast transmit power.
+ *
+ *  @see SBKBeaconTransmitPower.
+ */
+@property (nonatomic, readonly) NSNumber * broadcastTransmitPower;
+
+/**
+ *
+ *  The broadcast transmit interval.
+ *
+ */
+@property (nonatomic, readonly) NSNumber * broadcastInterval;
+
+/**
+ *
+ *  The flag whether beacon is in energy saving mode.
+ *
+ */
+@property (nonatomic, readonly) NSNumber * inEnergySaving;
 
 /**
  *  The number of accelerometer count.
