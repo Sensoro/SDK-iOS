@@ -1,0 +1,3 @@
+[submodule "CloudSDKSample"]
+	path = Yunzi-iOS
+	url = git@github.com:Sensoro/Yunzi-iOS.git
