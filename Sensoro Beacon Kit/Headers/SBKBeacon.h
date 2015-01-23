@@ -444,6 +444,14 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
 - (void)sensoroBeaconDidDisconnect:(SBKBeacon *)beacon error:(NSError *)error;
 
 /**
+ *  Invoked when a beacon's sensor settings changes.
+ *
+ *  @param beacon  The beacon providing this information.
+ *  @param settings The new sensor setting.
+ */
+- (void)sensoroBeacon:(SBKBeacon *)beacon didUpdateSensorSetting:(NSDictionary*)settings;
+
+/**
  *  Invoked when a beacon's RSSI changes.
  *
  *  @param beacon The beacon providing this information.

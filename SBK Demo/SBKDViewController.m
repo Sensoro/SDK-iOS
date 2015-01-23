@@ -9,6 +9,7 @@
 #import "SBKDViewController.h"
 #import "SBKBeaconManager.h"
 #import "SBKDBeaconCell.h"
+#import "SBKUnitConvertHelper.h"
 
 @interface SBKDViewController () <SBKBeaconManagerDelegate> {
     NSArray *_UUIDs;
@@ -54,8 +55,11 @@ static NSString *CellIdentifier = @"SBKDBeaconCell";
 - (void)beaconManager:(SBKBeaconManager *)beaconManager beaconDidGone:(SBKBeacon *)beacon {
     [_beacons removeObject:beacon];
     //NSLog(@"Leave a beacon %@",beacon.beaconID.stringRepresentation);
-    [self.tableView deleteRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:_beacons.count inSection:0]]
-                          withRowAnimation:UITableViewRowAnimationFade];
+    
+    if (_beacons.count < [self.tableView numberOfRowsInSection:0]) {
+        [self.tableView deleteRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:_beacons.count inSection:0]]
+                              withRowAnimation:UITableViewRowAnimationFade];
+    }
 }
 
 - (void)beaconManager:(SBKBeaconManager *)beaconManager scanDidFinishWithBeacons:(NSArray *)beacons {
@@ -82,6 +86,9 @@ static NSString *CellIdentifier = @"SBKDBeaconCell";
 
     cell.deviceInfo.text = [NSString stringWithFormat:@"hardware: %@ firmware %@",
                             beacon.hardwareModelName,beacon.firmwareVersion];
+
+    cell.sensorInfo.text = [NSString stringWithFormat:@"Temp.:%@ Ligth:%@ Tx : %@",
+                            beacon.temperature,beacon.light, [SBKUnitConvertHelper transmitPowerToString:beacon]];
     
     if (beacon.inRange) {
         if (beacon.proximity != CLProximityUnknown) {
