@@ -47,14 +47,14 @@ static NSString *CellIdentifier = @"SBKDBeaconCell";
 
 - (void)beaconManager:(SBKBeaconManager *)beaconManager didRangeNewBeacon:(SBKBeacon *)beacon {
     [_beacons addObject:beacon];
-    //NSLog(@"Enter new beacon %@",beacon.beaconID.stringRepresentation);
+    NSLog(@"Enter new beacon %@",beacon.beaconID.stringRepresentation);
     [self.tableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:_beacons.count - 1 inSection:0]]
                           withRowAnimation:UITableViewRowAnimationFade];
 }
 
 - (void)beaconManager:(SBKBeaconManager *)beaconManager beaconDidGone:(SBKBeacon *)beacon {
     [_beacons removeObject:beacon];
-    //NSLog(@"Leave a beacon %@",beacon.beaconID.stringRepresentation);
+    NSLog(@"Leave a beacon %@",beacon.beaconID.stringRepresentation);
     
     if (_beacons.count < [self.tableView numberOfRowsInSection:0]) {
         [self.tableView deleteRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:_beacons.count inSection:0]]
@@ -64,6 +64,7 @@ static NSString *CellIdentifier = @"SBKDBeaconCell";
 
 - (void)beaconManager:(SBKBeaconManager *)beaconManager scanDidFinishWithBeacons:(NSArray *)beacons {
     [self.tableView reloadRowsAtIndexPaths:[self.tableView indexPathsForVisibleRows] withRowAnimation:UITableViewRowAnimationNone];
+    //NSLog(@"Times call");
 }
 
 #pragma mark - Table view data source
