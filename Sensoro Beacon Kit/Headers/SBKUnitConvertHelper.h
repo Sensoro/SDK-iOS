@@ -11,7 +11,6 @@
 
 @class SBKBeacon;
 
-
 /**
  *  The SBKUnitConvertHelper class is a utitlity tool class to help developer to convert enum to a readable text
  *  or value.

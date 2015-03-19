@@ -26,11 +26,16 @@ enum {
      *  The connection failed.
      */
     SBKErrorConnectionFailed = 10000,
-
+    
     /**
      *  Unexpected disconnection occurred.
      */
     SBKErrorUnexpectedDisconnect = 10010,
+    
+    /**
+     *  The bluetooth is power off.
+     */
+    SBKErrorBluetoothPowerOff = 10020,
 
     /**
      *  The attribute’s value cannot be written.
