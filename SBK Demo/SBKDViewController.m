@@ -42,6 +42,13 @@ static NSString *CellIdentifier = @"SBKDBeaconCell";
     self.tableView.rowHeight = 112;
     self.tableView.allowsSelection = NO;
     
+    UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 44)];
+    label.text = [SBKBeaconManager sharedInstance].version;
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:[SBKBeaconManager sharedInstance].version
+                                                                              style:UIBarButtonItemStylePlain
+                                                                             target:self
+                                                                             action:nil];
+    
     [SBKBeaconManager sharedInstance].delegate = self;
 }
 
