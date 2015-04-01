@@ -1,8 +1,7 @@
-3.2.2 Change List
+3.2.3 Change List
 
 1. 加入LED灯控制功能。
 2. 修正偶尔出现的beacon的accuracy没有更新的情况。
-
 
 3.2.1 Change List
 
