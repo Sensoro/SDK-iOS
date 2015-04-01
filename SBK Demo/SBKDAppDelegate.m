@@ -17,6 +17,10 @@
     SBKBeaconID *beaconID = [SBKBeaconID beaconIDWithProximityUUID:SBKSensoroDefaultProximityUUID];
     [[SBKBeaconManager sharedInstance] startRangingBeaconsWithID:beaconID
                                                wakeUpApplication:YES];
+    
+    SBKBeaconID *beaconIDWeChat = [SBKBeaconID beaconIDWithProximityUUID:[[NSUUID alloc] initWithUUIDString:@"FDA50693-A4E2-4FB1-AFCF-C6EB07647825"]];
+    [[SBKBeaconManager sharedInstance] startRangingBeaconsWithID:beaconIDWeChat
+                                               wakeUpApplication:YES];
 
     [[SBKBeaconManager sharedInstance] requestAlwaysAuthorization];
     //[[SBKBeaconManager sharedInstance] requestWhenInUseAuthorization];
@@ -27,6 +31,8 @@
     [self.window makeKeyAndVisible];
 
 
+    //[UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+    
     return YES;
 }
 							

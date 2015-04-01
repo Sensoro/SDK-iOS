@@ -88,9 +88,9 @@ static NSString *CellIdentifier = @"SBKDBeaconCell";
     SBKBeacon *beacon = _beacons[indexPath.row];
     cell.majorAndMinorLabel.text = [NSString stringWithFormat:@"%04X-%04X ", beacon.beaconID.major.intValue, beacon.beaconID.minor.intValue];
     cell.UUIDLabel.text = beacon.beaconID.proximityUUID.UUIDString;
-    cell.detailLabel.text = [NSString stringWithFormat:@"Model: %@, RSSI: %d",
+    cell.detailLabel.text = [NSString stringWithFormat:@"Model: %@, RSSI: %d, accuracy : %f",
                              beacon.hardwareModelName ?: @"Unknown",
-                             (int)beacon.rssi];
+                             (int)beacon.rssi,beacon.accuracy];
 
     cell.deviceInfo.text = [NSString stringWithFormat:@"hardware: %@ firmware %@",
                             beacon.hardwareModelName,beacon.firmwareVersion];

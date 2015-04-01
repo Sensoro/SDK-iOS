@@ -265,6 +265,20 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
  */
 - (BOOL)enableiBeaconWithCompletion:(SBKBeaconCompletionBlock)completion;
 
+/**
+ *  flash light of SmartBeacon.
+ *
+ *  @param command     If the bit of command is 1, then this light will turn on one times, if 0 ,the light turn off.
+ *                     you can use custom command, or use @see SBKCommonLigthFlashCommand
+ *  @param repeatCount The count that command was repeat.
+ *  @param completion  The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+ *
+ *  @return Can this writing operation be executed.
+ */
+- (BOOL)flashLightWithCommand:(UInt8)command
+                       repeat:(UInt8)repeatCount
+                   completion:(SBKBeaconCompletionBlock)completion;
+
 /**---------------------------------------------------------------------------------------
  * @name Writing Authorization
  *  ---------------------------------------------------------------------------------------

@@ -272,27 +272,57 @@ typedef NS_OPTIONS(int, SBKBeaconSecureBroadcastInterval) {
  */
 typedef NS_OPTIONS(int, SBKBeaconWorkMode) {
     /**
-     *  THe work mode is unknown.
+     *  The work mode is unknown.
      */
     SBKBeaconWorkModeUnknown = -1,
     /**
-     *  THe work model is mode 1 of a beacon B0 ( frimware version after 3.0 (include)) or A0
+     *  The work model is mode 1 of a beacon B0 ( frimware version after 3.0 (include)) or A0
      */
     SBKBeaconWorkMode1 = 0x01,
     /**
-     *  THe work mode is mode 2 of a beacon B0 ( frimware version after 3.0 (include)).
+     *  The work mode is mode 2 of a beacon B0 ( frimware version after 3.0 (include)).
      */
     SBKBeaconWorkMode2 = 0x02,
     /**
-     *  THe work mode is mode 3 of a beacon B0 ( frimware version after 3.0 (include)). or B0 (firmware version before 2.3 (include))
+     *  The work mode is mode 3 of a beacon B0 ( frimware version after 3.0 (include)). or B0 (firmware version before 2.3 (include))
      */
     SBKBeaconWorkMode3 = 0x03,
     /**
-     *  THe work mode is mode 4 of a beacon B0 ( frimware version after 3.0 (include)).
+     *  The work mode is mode 4 of a beacon B0 ( frimware version after 3.0 (include)).
      */
     SBKBeaconWorkMode4 = 0x04,
 };
 
-
+/**
+ * Common command to flash the light. In comment belllow, '-' is on and '_' is off, one bit countinue 0.5s.
+ * 
+ * You can use repeat parameter of 'flashLightWithCommand:repeat:completion:' to replay the command.
+ */
+typedef NS_OPTIONS(u_int8_t, SBKCommonLigthFlashCommand) {
+    /**
+     *  -_-_-_-_
+     */
+    SBKCommonFlashLigthCommand_Normal = 0xAA,
+    /**
+     *  --__--__
+     */
+    SBKCommonFlashLigthCommand_22 = 0xCC,
+    /**
+     *  -___-___
+     */
+    SBKCommonFlashLigthCommand_13 = 0x88,
+    /**
+     *  ---_---_
+     */
+    SBKCommonFlashLigthCommand_31 = 0xEE,
+    /**
+     *  ----____
+     */
+    SBKCommonFlashLigthCommand_40 = 0xF0,
+    /**
+     *  -----___
+     */
+    SBKCommonFlashLigthCommand_53 = 0xF8
+};
 
 
