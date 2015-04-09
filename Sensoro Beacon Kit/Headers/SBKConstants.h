@@ -302,27 +302,46 @@ typedef NS_OPTIONS(u_int8_t, SBKCommonLigthFlashCommand) {
     /**
      *  -_-_-_-_
      */
-    SBKCommonFlashLigthCommand_Normal = 0xAA,
+    SBKCommonFlashLightCommand_Normal = 0xAA,
     /**
      *  --__--__
      */
-    SBKCommonFlashLigthCommand_22 = 0xCC,
+    SBKCommonFlashLightCommand_22 = 0xCC,
     /**
      *  -___-___
      */
-    SBKCommonFlashLigthCommand_13 = 0x88,
+    SBKCommonFlashLightCommand_13 = 0x88,
     /**
      *  ---_---_
      */
-    SBKCommonFlashLigthCommand_31 = 0xEE,
+    SBKCommonFlashLightCommand_31 = 0xEE,
     /**
      *  ----____
      */
-    SBKCommonFlashLigthCommand_40 = 0xF0,
+    SBKCommonFlashLightCommand_40 = 0xF0,
     /**
      *  -----___
      */
-    SBKCommonFlashLigthCommand_53 = 0xF8
+    SBKCommonFlashLightCommand_53 = 0xF8
 };
+
+/**
+ *    Report the state for region.
+ */
+typedef NS_ENUM(int, SBKRegionState) {
+    /**
+     *  the state was unknown.
+     */
+    SBKRegionStateUnknown,
+    /**
+     *  enter a region.
+     */
+    SBKRegionStateEnter,
+    /**
+     *  leave a region.
+     */
+    SBKRegionStateLeave
+};
+
 
 

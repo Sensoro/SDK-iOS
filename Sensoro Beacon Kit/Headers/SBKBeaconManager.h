@@ -189,4 +189,18 @@
  */
 - (void)beaconManager:(SBKBeaconManager *)beaconManager didChangeAuthorizationStatus:(CLAuthorizationStatus)status;
 
+/**
+ * It is same with locationManager:didDetermineState:forRegion: of CLLocationManagerDelegate
+ * Tells the delegate about the state of the specified region.
+ *
+ *  @param beaconManager The beacon manager object reporting the event.
+ *  @param state The state of the specified region. For a list of possible values, see the SBKRegionState type.
+ *  @param region The region whose state was determined.
+ *
+ *  @discussion see locationManager:didDetermineState:forRegion: of CLLocationManagerDelegate, When a app waked up by a region, 
+ *  The system will call SDK, SDK will call this delegate method.
+ */
+- (void)beaconManager:(SBKBeaconManager *)beaconManager didDetermineState:(SBKRegionState) state forRegion:(SBKBeaconID*) region;
+
+
 @end
