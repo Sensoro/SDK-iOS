@@ -1,3 +1,6 @@
 [submodule "CloudSDKSample"]
 	path = Yunzi-iOS
 	url = git@github.com:Sensoro/Yunzi-iOS.git
+[submodule "Beacon-Active-iOS"]
+	path = Beacon-Active-iOS
+	url = git@github.com:Sensoro/Beacon-Active-iOS.git
