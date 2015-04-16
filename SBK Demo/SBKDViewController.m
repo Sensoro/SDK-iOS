@@ -71,7 +71,7 @@ static NSString *CellIdentifier = @"SBKDBeaconCell";
 
 - (void)beaconManager:(SBKBeaconManager *)beaconManager scanDidFinishWithBeacons:(NSArray *)beacons {
     [self.tableView reloadRowsAtIndexPaths:[self.tableView indexPathsForVisibleRows] withRowAnimation:UITableViewRowAnimationNone];
-    NSLog(@"Times call");
+    //NSLog(@"Times call");
 }
 
 #pragma mark - Table view data source
