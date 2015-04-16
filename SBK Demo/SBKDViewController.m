@@ -95,7 +95,7 @@ static NSString *CellIdentifier = @"SBKDBeaconCell";
     cell.deviceInfo.text = [NSString stringWithFormat:@"hardware: %@ firmware %@",
                             beacon.hardwareModelName,beacon.firmwareVersion];
 
-    cell.sensorInfo.text = [NSString stringWithFormat:@"Temp.:%@ Ligth:%@ Tx : %@",
+    cell.sensorInfo.text = [NSString stringWithFormat:@"Temp.:%@ Light:%@ Tx : %@",
                             beacon.temperature,beacon.light, [SBKUnitConvertHelper transmitPowerToString:beacon]];
     
     if (beacon.inRange) {
