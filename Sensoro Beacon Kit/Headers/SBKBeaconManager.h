@@ -126,6 +126,13 @@
  */
 - (NSArray *)allBeacons;
 
+/**
+ *  Disable the alert that was showed when BLE was power off. Defualt was show the alert dialog.
+ *  You can call this method to disable this alert, before call other method.
+ *
+ */
+- (void) disableBLEPowerAlert;
+
 /**---------------------------------------------------------------------------------------
  * @name Configuration
  *  ---------------------------------------------------------------------------------------
@@ -138,7 +145,20 @@
  */
 @property (readwrite, nonatomic) NSTimeInterval outOfRangeDelay;
 
+/**
+ * return current SDK version.
+ *
+ */
 @property (readonly, nonatomic) NSString* version;
+
+/**
+ *  Set whether enable duplicate key for scanning device in background mode.
+ *  default is NO，To set this property before call startRangingBeaconsWithID.
+ *
+ *  @discussion if set this property to YES, the SDK will continuously receive packet from device, 
+    but this increase the power consumption, NO, SDK will receive one packet from device unless this packet was changed.
+ */
+@property (readwrite, nonatomic) BOOL duplicateKeyBLE;
 
 - (void)setDebugModeActive:(BOOL)active;
 

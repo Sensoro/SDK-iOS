@@ -257,13 +257,41 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
 - (BOOL)disableiBeaconWithCompletion:(SBKBeaconCompletionBlock)completion;
 
 /**
- *  Open the iBeacon broadcast.
+ *  Enable the iBeacon broadcast.
  *
  *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
  *
  *  @return Can this writing operation be executed.
  */
 - (BOOL)enableiBeaconWithCompletion:(SBKBeaconCompletionBlock)completion;
+
+/**
+ *  Disable the enhance broadcast.
+ *
+ *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+ *
+ *  @return Can this writing operation be executed.
+ *
+ *  @discussion the Enhance broadcast can make the SDK find this device as Sensoro device even if iOS device was locked,
+ *  in other words, the screen was turned off. Normally, this device can be found by iOS device as a iBeacon device. if 
+ *  you want use SDK and find Sensoro device when the iOS device was locked, you need enable this feature. To enable this
+ *  mode will increase the power consumption.
+ */
+- (BOOL)disableEnhanceBroadcastWithCompletion:(SBKBeaconCompletionBlock)completion;
+
+/**
+ *  Enable the enhance broadcast.
+ *
+ *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+ *
+ *  @return Can this writing operation be executed.
+ *
+ *  @discussion the Enhance broadcast can make the SDK find this device as Sensoro device even if iOS device was locked,
+ *  in other words, the screen was turned off. Normally, this device can be found by iOS device as a iBeacon device. if
+ *  you want use SDK and find Sensoro device when the iOS device was locked, you need enable this feature. To enable this
+ *  mode will increase the power consumption.
+ */
+- (BOOL)enableEnhanceBroadcastWithCompletion:(SBKBeaconCompletionBlock)completion;
 
 /**
  *  flash light of SmartBeacon.
@@ -401,6 +429,13 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
 @property (nonatomic, readonly) NSNumber * inEnergySaving;
 
 /**
+ *
+ *  The flag whether beacon is in energy saving mode.
+ *
+ */
+@property (nonatomic, readonly) NSNumber * enhanceBroadcast;
+
+/**
  *  The number of accelerometer count.
  *
  *  @discussion Sensor data can only be updated when the app is running in the foreground.
@@ -429,7 +464,7 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
  */
 
 /**
- *  The CBPeripheral object assign to this beacon.
+ *  The CBPeripheral object assign to this beacon.this object may be changed continuously.
  */
 @property (readonly, nonatomic, strong) CBPeripheral * assignedPeripheral;
 

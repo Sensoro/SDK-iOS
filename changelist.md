@@ -1,3 +1,7 @@
+3.3.0 Change List
+
+1. SDK 3.3.0，支持在闭屏情况下，发现Sensoro的设备。
+
 3.2.3 Change List
 
 1. 加入LED灯控制功能。
