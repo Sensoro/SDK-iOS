@@ -63,7 +63,6 @@
  */
 + (NSString*) frequencyToString: (SBKBeacon *) beacon;
 
-
 /**
  *  Flag to indicator whether the beacon use micro antenna.
  *
@@ -72,5 +71,15 @@
  *  @return YES : use micro antenna, NO : use normal antenna.
  */
 + (BOOL)isMicroTX:(SBKBeacon *) beacon;
+
+/**
+ *  Convert a url to eddystone encode data.
+ *
+ *  @param url url to convert.
+ *
+ *  @return nil : failed, otherwise : OK.
+ */
++ (NSData*)urlToEddystoneEncodeURL:(NSString*) url;
+
 
 @end

@@ -343,5 +343,52 @@ typedef NS_ENUM(int, SBKRegionState) {
     SBKRegionStateLeave
 };
 
+/**
+ *    Package type for Eddystone.
+ */
+typedef NS_ENUM(int, EddystonePackageType) {
+    /**
+     *  Eddystone UID package.
+     */
+    EDDYSTONE_PACKAGE_UID = 0,
+    /**
+     *  Eddystone URL package.
+     */
+    EDDYSTONE_PACKAGE_URL = 1,
+    /**
+     *  Eddystone TLM package.
+     */
+    EDDYSTONE_PACKAGE_TLM = 2
+};
+
+/**
+ *    The interval of eddystone's TLM package.
+ */
+typedef NS_ENUM(int8_t, EddystoneTLMInterval) {
+    
+    /**
+     *  unknown type.
+     */
+    EDDYSTONE_TLM_INTERVAL_UNKNOWN = -1,
+    
+    /**
+     *  broadcast a eddystone TLM package per UID or URL package.
+     */
+    EDDYSTONE_TLM_INTERVAL_OnePerOne = 0x00,
+    /**
+     *  broadcast a eddystone TLM package per five UID or URL package.
+     */
+    EDDYSTONE_TLM_INTERVAL_OnePerFive = 0x01,
+    /**
+     *  broadcast a eddystone TLM package per ten UID or URL package.
+     */
+    EDDYSTONE_TLM_INTERVAL_OnePerTen = 0x02,
+    /**
+     *  broadcast a eddystone TLM package per hundred UID or URL package.
+     */
+    EDDYSTONE_TLM_INTERVAL_OnePerHundred = 0x03
+};
+
+
 
 

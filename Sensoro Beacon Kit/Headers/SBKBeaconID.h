@@ -14,6 +14,8 @@ extern NSUUID * SBKSensoroDefaultProximityUUID;
 /**
  *  SBKBeaconID instance is an obejct to specify a beacon’s identity. The proximityUUID property will never be nil, major and minor are optional.
  */
+
+
 @interface SBKBeaconID : NSObject <NSCopying>
 
 /**---------------------------------------------------------------------------------------

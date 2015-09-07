@@ -265,6 +265,25 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
  */
 - (BOOL)enableiBeaconWithCompletion:(SBKBeaconCompletionBlock)completion;
 
+
+/**
+ *  Disable the AliBeacon broadcast.
+ *
+ *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+ *
+ *  @return Can this writing operation be executed.
+ */
+- (BOOL)disableAliBeaconWithCompletion:(SBKBeaconCompletionBlock)completion;
+
+/**
+ *  Enable the AliBeacon broadcast.
+ *
+ *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+ *
+ *  @return Can this writing operation be executed.
+ */
+- (BOOL)enableAliBeaconWithCompletion:(SBKBeaconCompletionBlock)completion;
+
 /**
  *  Disable the enhance broadcast.
  *
@@ -430,6 +449,13 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
 
 /**
  *
+ *  The flag whether device is broadcasting ali beacon info.
+ *
+ */
+@property (nonatomic, readonly) NSNumber * aliBeacon;
+
+/**
+ *
  *  The flag whether beacon is in energy saving mode.
  *
  */
@@ -450,6 +476,13 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
 @property (readonly, nonatomic, copy, getter = isMoving) NSNumber * moving;
 
 /**
+ *  Flag indicating switch state to shake to light on.
+ *
+ *  @discussion To shake to litght on is that you can use to ensure the device is working.
+ */
+@property (readonly, nonatomic) NSNumber * shakeToLightOn;
+
+/**
  *  Resets accelerometer counter value to zero.
  *
  *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
@@ -457,6 +490,17 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
  *  @return Can this operation be executed.
  */
 - (BOOL)resetAccelerometerCountWithCompletion:(SBKBeaconCompletionBlock)completion;
+
+/**
+ *  Write the state of switch to shake to light on.
+ *
+ *  @param state YES: turn on this switch, NO: turn off this switch.
+ *
+ *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+ *
+ *  @return Can this operation be executed.
+ */
+- (BOOL)writeShakeToLightOnState: (BOOL) state completion:(SBKBeaconCompletionBlock)completion;
 
 /**---------------------------------------------------------------------------------------
  * @name Bridge to Core Bluetooth
@@ -467,6 +511,116 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
  *  The CBPeripheral object assign to this beacon.this object may be changed continuously.
  */
 @property (readonly, nonatomic, strong) CBPeripheral * assignedPeripheral;
+
+/**---------------------------------------------------------------------------------------
+ * @name Eddystone.
+ *  ---------------------------------------------------------------------------------------
+ */
+
+/**
+ *
+ *  The flag whether UID packet of eddystone is broadcasted.
+ *
+ */
+@property (readonly, nonatomic) NSNumber * eddystoneUIDEnabled;
+
+/**
+ *
+ *  The flag whether URL packet of eddystone is broadcasted.
+ *
+ */
+@property (readonly, nonatomic) NSNumber * eddystoneURLEnabled;
+
+/**
+ *
+ *  The flag whether TLM packet of eddystone is broadcasted.
+ *
+ */
+@property (readonly, nonatomic) NSNumber * eddystoneTLMEnabled;
+
+/**
+ *
+ *  The NID of UID packet of eddystone.
+ *
+ */
+@property (readonly, nonatomic) NSData * eddystoneNID;
+
+/**
+ *
+ *  The BID of UID packet of eddystone.
+ *
+ */
+@property (readonly, nonatomic) NSData * eddystoneBID;
+
+/**
+ *
+ *  The interval of TLM packet of eddystone.
+ *
+ */
+@property (readonly, nonatomic) NSNumber * eddystoneTLMInterval;
+
+/**
+ *
+ *  The URL of URL packet of eddystone.
+ *
+ */
+@property (readonly, nonatomic) NSString * eddystoneUrl;
+
+/**
+ *  Write a url to eddystone.
+ *
+ *  @param url The url that eddystone broadcast with url frame;
+ *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+ *
+ *  @return Can this writing operation be executed.
+ */
+- (BOOL)writeEddystoneUrl:(NSString*) url completion:(SBKBeaconCompletionBlock)completion;
+
+/**
+ *  enable some package of eddystone.
+ *
+ *  @param package which package will enbaled or disabled;
+ *
+ *  @param enable package is enbaled or disabled. YES : enable, NO : disable;
+ *
+ *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+ *
+ *  @return Can this writing operation be executed.
+ */
+- (BOOL)eddystonePackage: (EddystonePackageType) package enable: (BOOL) enable completion:(SBKBeaconCompletionBlock)completion;
+
+/**
+ *  write eddystone interval of TLM package.
+ *
+ *  @param interval broadcast on this interval;
+ *
+ *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+ *
+ *  @return Can this writing operation be executed.
+ */
+- (BOOL)writeEddystoneTLMInterval: (EddystoneTLMInterval) interval completion:(SBKBeaconCompletionBlock)completion;
+
+/**
+ *  write eddystone nid of UID package.
+ *
+ *  @param nidString nid presented by hex string;
+ *
+ *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+ *
+ *  @return Can this writing operation be executed.
+ */
+- (BOOL)writeEddystoneNID: (NSString*) nidString completion:(SBKBeaconCompletionBlock)completion;
+
+/**
+ *  write eddystone bid of UID package.
+ *
+ *  @param bidString bid presented by hex string;
+ *
+ *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+ *
+ *  @return Can this writing operation be executed.
+ */
+- (BOOL)writeEddystoneBID: (NSString*) bidString completion:(SBKBeaconCompletionBlock)completion;
 
 @end
 
@@ -483,6 +637,14 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
  *  @param beacon The beacon that has been connected.
  */
 - (void)sensoroBeaconDidConnect:(SBKBeacon *)beacon;
+
+/**
+ *  Invoked when a connection required a password. if you receive this method, you must call
+ *  requireWritePermissionWithPassword to get permission.
+ *
+ *  @param beacon The beacon that has been connected.
+ */
+- (void)sensoroBeaconRequirePassword:(SBKBeacon *)beacon;
 
 /**
  *  Invoked when an existing connection with a beacon is torn down
