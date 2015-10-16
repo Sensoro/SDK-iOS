@@ -1,3 +1,13 @@
+4.1.0 Change List
+
+1. 提供对云子4.0固件的支持。
+2. 可以解析 Eddystone 的广播信息
+
+4.0.0 Change List
+
+1. SDK 4.0.0, 提供对固件4.0的支持。可以进行配置。
+2. 使用了新的密码认证方式，原来在连接成功后，设定密码，现在添加回调函数，在回调函数中，设定密码。
+
 3.3.0 Change List
 
 1. SDK 3.3.0，支持在闭屏情况下，发现Sensoro的设备。
@@ -21,8 +31,7 @@
 1. C0硬件支持，包括发现，及微距档位支持。
 2. 添加云端收集的支持。
 
-3
-.0.0 Change List
+3.0.0 Change List
 
 1. 3.0的硬件支持。
 2. 删除SBKBeaconManager中的disableAdvancedFeatures属性，不允许用户关闭蓝牙扫描功能。

@@ -51,9 +51,24 @@ enum {
      *  Indicates that the data is not valid.
      */
     SBKErrorInvalidData = 11020,
-
+    
     /**
      *  Authorization failed.
      */
-    SBKErrorAuthorizationFailed = 12000
+    SBKErrorAuthorizationFailed = 12000,
+    
+    /**
+     *  Device on beacon is busy.
+     */
+    SBKErrorDeviceBusy = 13000,
+    
+    /**
+     *  Bluetooth error in communication with beacon.
+     */
+    SBKErrorDeviceBLE = 13001,
+    
+    /**
+     *  System error on beacon.
+     */
+    SBKErrorDeviceSystem = 13002,
 };

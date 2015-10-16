@@ -456,10 +456,17 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
 
 /**
  *
- *  The flag whether beacon is in energy saving mode.
+ *  The flag whether beacon is in enhance broadcast mode.
  *
  */
 @property (nonatomic, readonly) NSNumber * enhanceBroadcast;
+
+/**
+ *
+ *  The flag whether beacon is in eddystone broadcast mode.
+ *
+ */
+@property (nonatomic, readonly) NSNumber * eddystoneEnabled;
 
 /**
  *  The number of accelerometer count.
@@ -565,6 +572,27 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
  *
  */
 @property (readonly, nonatomic) NSString * eddystoneUrl;
+
+/**
+ *
+ *  The battery voltage of TLM packet of eddystone.
+ *
+ */
+@property (readonly, nonatomic) NSNumber * eddystoneBatteryVoltage;
+
+/**
+ *
+ *  The PDU count of TLM packet of eddystone.
+ *
+ */
+@property (readonly, nonatomic) NSNumber * eddystonePduCount;
+
+/**
+ *
+ *  The wored time since reboot or power on of TLM packet of eddystone.
+ *
+ */
+@property (readonly, nonatomic) NSNumber * eddystoneWorkedTime;
 
 /**
  *  Write a url to eddystone.
