@@ -39,7 +39,7 @@ static NSString *CellIdentifier = @"SBKDBeaconCell";
 
     [self.tableView registerNib:[UINib nibWithNibName:CellIdentifier bundle:nil]
          forCellReuseIdentifier:CellIdentifier];
-    self.tableView.rowHeight = 112;
+    self.tableView.rowHeight = 142;
     self.tableView.allowsSelection = NO;
     
     UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 44)];
@@ -97,6 +97,20 @@ static NSString *CellIdentifier = @"SBKDBeaconCell";
 
     cell.sensorInfo.text = [NSString stringWithFormat:@"Temp.:%@ Light:%@ Tx : %@",
                             beacon.temperature,beacon.light, [SBKUnitConvertHelper transmitPowerToString:beacon]];
+    
+    if (beacon.eddystoneNID == nil) {
+        cell.eddystoneUID.text = @"N/A";
+    }else{
+        NSMutableData * data = [NSMutableData dataWithData:beacon.eddystoneNID];
+        [data appendData:beacon.eddystoneBID];
+        cell.eddystoneUID.text = [NSString stringWithFormat:@"UID :%@", data];
+    }
+
+    if (beacon.eddystoneNID == nil) {
+        cell.eddystoneURL.text = @"N/A";
+    }else{
+        cell.eddystoneUID.text = [NSString stringWithFormat:@"URL :%@", beacon.eddystoneUrl];
+    }
     
     if (beacon.inRange) {
         if (beacon.proximity != CLProximityUnknown) {
