@@ -141,11 +141,11 @@ typedef void(^SBKBeaconWatcher)(SBKBeacon* beacon, SBKBeacon_Action action);
 /**
  *  Get the beacon instance with CLBeacon object.
  *
- *  @param beacon Using CLBeacon object to identify the sensoro beacon you want.
+ *  @param beacon Using CLBeacon's uuid major minor to identify the sensoro beacon you want.
  *
  *  @return SBKBeacon instance.
  *
- *  @discussion This mehtod will return a sensoso beacon corresponding CLBeacon object. if this beacon is not a sensoro beacon, it will return nil.
+ *  @discussion This mehtod will return a sensoso beacon corresponding CLBeacon object. if this beacon is not a sensoro beacon, it will return nil. if there is a SBKBeacon with same uuid, major, minor, it will return this SBKBeacon.
  */
 - (SBKBeacon *)beaconWithCLBeacon:(CLBeacon *)beacon;
 
