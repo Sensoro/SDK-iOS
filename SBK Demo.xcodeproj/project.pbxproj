@@ -18,6 +18,7 @@
 		469F80401978F50100A4B7D4 /* libSensoroBeaconKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 469F803F1978F50100A4B7D4 /* libSensoroBeaconKit.a */; };
 		469F80441978F58B00A4B7D4 /* SBKDBeaconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 469F80421978F58B00A4B7D4 /* SBKDBeaconCell.m */; };
 		469F80451978F58B00A4B7D4 /* SBKDBeaconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 469F80431978F58B00A4B7D4 /* SBKDBeaconCell.xib */; };
+		63291C921BDF242C00CEDB1B /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63291C911BDF242C00CEDB1B /* Welcome.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		469F80421978F58B00A4B7D4 /* SBKDBeaconCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBKDBeaconCell.m; sourceTree = "<group>"; };
 		469F80431978F58B00A4B7D4 /* SBKDBeaconCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBKDBeaconCell.xib; sourceTree = "<group>"; };
 		46C2460F19B1DAAB00FE4F90 /* SBKConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBKConstants.h; sourceTree = "<group>"; };
+		63291C911BDF242C00CEDB1B /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		634CA8461A71F65400E2EF2E /* SBKUnitConvertHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKUnitConvertHelper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +105,7 @@
 				469F80131978F4AA00A4B7D4 /* SBKDViewController.m */,
 				469F80151978F4AA00A4B7D4 /* Images.xcassets */,
 				469F80041978F4AA00A4B7D4 /* Supporting Files */,
+				63291C911BDF242C00CEDB1B /* Welcome.storyboard */,
 			);
 			path = "SBK Demo";
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				469F80161978F4AA00A4B7D4 /* Images.xcassets in Resources */,
+				63291C921BDF242C00CEDB1B /* Welcome.storyboard in Resources */,
 				469F80081978F4AA00A4B7D4 /* InfoPlist.strings in Resources */,
 				469F80451978F58B00A4B7D4 /* SBKDBeaconCell.xib in Resources */,
 			);
