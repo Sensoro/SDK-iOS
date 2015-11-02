@@ -1,3 +1,7 @@
+4.1.2 Change List
+
+1. Bug Fixes.
+
 4.1.1 Change List
 
 1. Add Support for SmartBeacon Pro (C1).

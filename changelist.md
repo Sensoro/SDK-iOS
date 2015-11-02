@@ -1,3 +1,7 @@
+4.1.2 Change List
+
+1. Bug 修正。
+
 4.1.1 Change List
 
 1. 替换为SDK 4.1.1，以提供对云盒 Pro (C1) 的支持。
