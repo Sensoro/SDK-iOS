@@ -1,3 +1,8 @@
+4.1.3 Change List
+
+1. Fixed the issue that bluetooth sanning is in main queue.
+2. Fixed the issue that sdk start bluetooth scanning before bluetooth of iOS device is power on.
+
 4.1.2 Change List
 
 1. Bug Fixes.
