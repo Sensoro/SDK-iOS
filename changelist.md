@@ -1,4 +1,8 @@
 
+4.1.4 Change List
+
+1. 修正系统中验证区域时，出现CLCircleRegion时，Crash的问题
+2. 修正连接4.1的蓝牙设备成功时，connect回调在非主线程中调用的问题。
 
 4.1.3 Change List
 

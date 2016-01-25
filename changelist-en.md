@@ -1,3 +1,8 @@
+4.1.4 Change List
+
+1. Fixed the issue that crash when monitored region include CLCircleRegion.
+2. Fixed the issue that call connection callback in other queue than main queue when connect to 4.0 and later devcie.
+
 4.1.3 Change List
 
 1. Fixed the issue that bluetooth sanning is in main queue.
