@@ -1,4 +1,8 @@
 
+4.1.5 Change List
+
+1. 在停止扫描Beacon时，同时停止蓝牙扫描。如果用户开启了蓝牙后台模式，在停止扫描时，如果不停止蓝牙，会导致App持续在后台运行，消耗电量。
+
 4.1.4 Change List
 
 1. 修正系统中验证区域时，出现CLCircleRegion时，Crash的问题
