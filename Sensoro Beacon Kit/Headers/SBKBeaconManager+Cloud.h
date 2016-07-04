@@ -11,5 +11,7 @@
 @interface SBKBeaconManager (Cloud)
 
 - (void)setCloudServiceEnable:(BOOL)set;
+- (void)setCloudServiceGPSEnable:(BOOL)set;
+- (void)setCloudUploadPeriod: (NSTimeInterval) cloudUploadPeriod;
 
 @end

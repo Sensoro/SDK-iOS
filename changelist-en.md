@@ -1,4 +1,8 @@
 
+4.1.6 Change List
+
+1. Provid a fucntion to change device to standard Eddsytone mode.
+
 4.1.5 Change List
 
 1. the SDK stop bluetooth scan when sdk stop all monitoring. Because if App require d the bluetooth-central background mode, when App stop scan, and enter the background, App should stop any scan to saving power, in prev version, this will not achieve. In current version, it is OK.
