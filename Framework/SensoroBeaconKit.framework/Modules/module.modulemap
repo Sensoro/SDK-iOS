@@ -1,0 +1,6 @@
+framework module SensoroBeaconKit {
+  umbrella header "SensoroBeaconKit.h"
+
+  export *
+  module * { export * }
+}

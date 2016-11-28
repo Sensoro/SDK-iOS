@@ -190,6 +190,27 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
 - (BOOL)writeMajor:(NSNumber *)major minor:(NSNumber *)minor completion:(SBKBeaconCompletionBlock)completion;
 
 /**
+ *  Updates secondary proximity UUID of this beacon, only firmware 3.3.
+ *
+ *  @param proximityUUID Proximity UUID in NSUUID object.
+ *  @param completion    The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+ *
+ *  @return Can this writing operation be executed.
+ */
+- (BOOL)writeSecondaryProximityUUID:(NSUUID *)proximityUUID completion:(SBKBeaconCompletionBlock)completion;
+
+/**
+ *  Updates secondary major and secondary minor of this beacon, only firmware 3.3.
+ *
+ *  @param major      The major value.
+ *  @param minor      The minor value.
+ *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+ *
+ *  @return Can this writing operation be executed.
+ */
+- (BOOL)writeSecondaryMajor:(NSNumber *)major secondaryMinor:(NSNumber *)minor completion:(SBKBeaconCompletionBlock)completion;
+
+/**
  *  Updates base settings of this beacon.
  *
  *  @param settings   Configuration attributes you try to update in a dictionary. For available options, see SBKBeaconBaseSettings.
@@ -265,6 +286,24 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
  */
 - (BOOL)enableiBeaconWithCompletion:(SBKBeaconCompletionBlock)completion;
 
+/**
+ *  Disable the secondary iBeacon broadcast.
+ *
+ *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+ *
+ *  @return Can this writing operation be executed.
+ */
+- (BOOL)disableSecondaryiBeaconWithCompletion:(SBKBeaconCompletionBlock)completion;
+
+/**
+ *  Enable the secondary iBeacon broadcast.
+ *
+ *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+ *
+ *  @return Can this writing operation be executed.
+ */
+- (BOOL)enableSecondaryiBeaconWithCompletion:(SBKBeaconCompletionBlock)completion;
+
 
 /**
  *  Disable the AliBeacon broadcast.
@@ -278,7 +317,7 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
 /**
  *  Enable the AliBeacon broadcast.
  *
- *  @param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+ *  @param completion  The block to execute after the writing is completed. If error parameter is nil means writing successfully.
  *
  *  @return Can this writing operation be executed.
  */
@@ -291,10 +330,10 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
  *
  *  @return Can this writing operation be executed.
  *
- *  @discussion the Enhance broadcast can make the SDK find this device as Sensoro device even if iOS device was locked,
- *  in other words, the screen was turned off. Normally, this device can be found by iOS device as a iBeacon device. if 
- *  you want use SDK and find Sensoro device when the iOS device was locked, you need enable this feature. To enable this
- *  mode will increase the power consumption.
+ *  @discussion The Enhance broadcast it could make the SDK find this device as Sensoro device even if iOS device is locked,
+ + *  In other words, the screen was turned off. Normally, this device can be found by iOS device as the iBeacon device. If
+ + *  you want to use SDK and find Sensoro device when the iOS device was locked, you need to enable this feature. And this
+ + *  mode will increase the power consumption.
  */
 - (BOOL)disableEnhanceBroadcastWithCompletion:(SBKBeaconCompletionBlock)completion;
 
@@ -305,10 +344,10 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
  *
  *  @return Can this writing operation be executed.
  *
- *  @discussion the Enhance broadcast can make the SDK find this device as Sensoro device even if iOS device was locked,
- *  in other words, the screen was turned off. Normally, this device can be found by iOS device as a iBeacon device. if
- *  you want use SDK and find Sensoro device when the iOS device was locked, you need enable this feature. To enable this
- *  mode will increase the power consumption.
+ *  @discussion The Enhance broadcast it could make the SDK find this device as Sensoro device even if iOS device is locked,
+ + *  In other words, the screen was turned off. Normally, this device can be found by iOS device as the iBeacon device. If
+ + *  you want to use SDK to find Sensoro device when the iOS device was locked, you need to enable this feature. And this
+ + *  mode will increase the power consumption.
  */
 - (BOOL)enableEnhanceBroadcastWithCompletion:(SBKBeaconCompletionBlock)completion;
 
@@ -325,6 +364,16 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
 - (BOOL)flashLightWithCommand:(UInt8)command
                        repeat:(UInt8)repeatCount
                    completion:(SBKBeaconCompletionBlock)completion;
+
+/**
+ *  flash light of SmartBeacon. now it is deprecated.
+ *
+ *  @param completion  The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+ *
+ *  @return Switch device to eddystone fully support mode, and when it was in this mode, the SDK couldn't find this device and 
+    couldn't switch back to normal mode.
+ */
+- (BOOL)switchToPureEddystoneModeWithCompletion:(SBKBeaconCompletionBlock)completion;
 
 /**---------------------------------------------------------------------------------------
  * @name Writing Authorization
@@ -499,7 +548,7 @@ typedef void (^SBKBeaconCompletionBlock)(NSError *error);
 - (BOOL)resetAccelerometerCountWithCompletion:(SBKBeaconCompletionBlock)completion;
 
 /**
- *  Write the state of switch to shake to light on.
+ *  Write the state of switch to "shake to light on".
  *
  *  @param state YES: turn on this switch, NO: turn off this switch.
  *
