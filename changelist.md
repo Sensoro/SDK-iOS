@@ -1,9 +1,11 @@
 4.1.8 Change List
+
 1. 删除切换到标准Eddystone模式的支持
 2. 修复Bug
 3. 添加Framework形式的SDK
 
 4.1.7 Change List
+
 1. 支持3.3固件，提供双Beacon支持。
 2. 修复Bug
 

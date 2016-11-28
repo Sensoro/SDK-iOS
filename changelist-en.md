@@ -1,9 +1,11 @@
 4.1.8 Change List
+
 1. Remove support to switch to standard eddystone mode.
 2. Bug fixes.
 3. Add Framework SDK in Framework.
 
 4.1.7 Change List
+
 1. Support firmware 3.3, provide double beacon broadcast.
 2. Bug fixes
 
