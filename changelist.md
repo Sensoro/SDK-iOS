@@ -1,3 +1,7 @@
+4.1.9 Change List
+
+1. 开启 Bitcode 模式.
+
 4.1.8 Change List
 
 1. 删除切换到标准Eddystone模式的支持

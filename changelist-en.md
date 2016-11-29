@@ -1,3 +1,8 @@
+4.1.9 Change List
+
+1. Enable bitcode.
+
+
 4.1.8 Change List
 
 1. Remove support to switch to standard eddystone mode.
