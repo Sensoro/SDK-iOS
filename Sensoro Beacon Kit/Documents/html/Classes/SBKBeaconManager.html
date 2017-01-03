@@ -1,0 +1,1372 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SBKBeaconManager Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Sensoro Beacon Kit </a></h1>
+				<a id="developerHome" href="../index.html">Sensoro, Inc</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SBKBeaconManager Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/duplicateKeyBLE">&nbsp;&nbsp;&nbsp;&nbsp;duplicateKeyBLE</option>
+	
+	<option value="//api/name/outOfRangeDelay">&nbsp;&nbsp;&nbsp;&nbsp;outOfRangeDelay</option>
+	
+	<option value="//api/name/version">&nbsp;&nbsp;&nbsp;&nbsp;version</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/sharedInstance">&nbsp;&nbsp;&nbsp;&nbsp;+ sharedInstance</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addBroadcastKey:">&nbsp;&nbsp;&nbsp;&nbsp;- addBroadcastKey:</option>
+	
+	<option value="//api/name/allBeacons">&nbsp;&nbsp;&nbsp;&nbsp;- allBeacons</option>
+	
+	<option value="//api/name/beaconWithCLBeacon:">&nbsp;&nbsp;&nbsp;&nbsp;- beaconWithCLBeacon:</option>
+	
+	<option value="//api/name/beaconWithID:">&nbsp;&nbsp;&nbsp;&nbsp;- beaconWithID:</option>
+	
+	<option value="//api/name/beaconsInRange">&nbsp;&nbsp;&nbsp;&nbsp;- beaconsInRange</option>
+	
+	<option value="//api/name/disableBLEPowerAlert">&nbsp;&nbsp;&nbsp;&nbsp;- disableBLEPowerAlert</option>
+	
+	<option value="//api/name/rangedBeaconIDs">&nbsp;&nbsp;&nbsp;&nbsp;- rangedBeaconIDs</option>
+	
+	<option value="//api/name/registerBeaconAppearWatcher:type:watcher:">&nbsp;&nbsp;&nbsp;&nbsp;- registerBeaconAppearWatcher:type:watcher:</option>
+	
+	<option value="//api/name/requestAlwaysAuthorization">&nbsp;&nbsp;&nbsp;&nbsp;- requestAlwaysAuthorization</option>
+	
+	<option value="//api/name/requestWhenInUseAuthorization">&nbsp;&nbsp;&nbsp;&nbsp;- requestWhenInUseAuthorization</option>
+	
+	<option value="//api/name/startRangingBeaconsWithID:wakeUpApplication:">&nbsp;&nbsp;&nbsp;&nbsp;- startRangingBeaconsWithID:wakeUpApplication:</option>
+	
+	<option value="//api/name/stopRangingAllBeacons">&nbsp;&nbsp;&nbsp;&nbsp;- stopRangingAllBeacons</option>
+	
+	<option value="//api/name/stopRangingBeaconsWithID:">&nbsp;&nbsp;&nbsp;&nbsp;- stopRangingBeaconsWithID:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Getting the Instance">Getting the Instance</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Setting and Getting the Delegate">Setting and Getting the Delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initiating Beacon Ranging">Initiating Beacon Ranging</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Getting the Instance of Beacons">Getting the Instance of Beacons</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuration">Configuration</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/duplicateKeyBLE">duplicateKeyBLE</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/outOfRangeDelay">outOfRangeDelay</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/version">version</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharedInstance">sharedInstance</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addBroadcastKey:">addBroadcastKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allBeacons">allBeacons</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beaconWithCLBeacon:">beaconWithCLBeacon:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beaconWithID:">beaconWithID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beaconsInRange">beaconsInRange</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disableBLEPowerAlert">disableBLEPowerAlert</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rangedBeaconIDs">rangedBeaconIDs</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registerBeaconAppearWatcher:type:watcher:">registerBeaconAppearWatcher:type:watcher:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestAlwaysAuthorization">requestAlwaysAuthorization</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestWhenInUseAuthorization">requestWhenInUseAuthorization</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startRangingBeaconsWithID:wakeUpApplication:">startRangingBeaconsWithID:wakeUpApplication:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopRangingAllBeacons">stopRangingAllBeacons</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopRangingBeaconsWithID:">stopRangingBeaconsWithID:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SBKBeaconManager Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SBKBeaconManager Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SBKBeaconManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The SBKBeaconManager class defines the interface for configuring the delivery of beacon-related events to your application. You use an instance of this class to get <a href="../Classes/SBKBeacon.html">SBKBeacon</a> objects, and establish the parameters that determine which beacon&rsquo;s events should be delivered.</p>
+
+<p>You should always use the shared instance. Creating own instance is not allowed.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Getting the Instance" name="task_Getting the Instance"></a>
+						<h3 class="subsubtitle task-title">Getting the Instance</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sharedInstance">+&nbsp;sharedInstance</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Setting and Getting the Delegate" name="task_Setting and Getting the Delegate"></a>
+						<h3 class="subsubtitle task-title">Setting and Getting the Delegate</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Initiating Beacon Ranging" name="task_Initiating Beacon Ranging"></a>
+						<h3 class="subsubtitle task-title">Initiating Beacon Ranging</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestAlwaysAuthorization">&ndash;&nbsp;requestAlwaysAuthorization</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestWhenInUseAuthorization">&ndash;&nbsp;requestWhenInUseAuthorization</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startRangingBeaconsWithID:wakeUpApplication:">&ndash;&nbsp;startRangingBeaconsWithID:wakeUpApplication:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopRangingBeaconsWithID:">&ndash;&nbsp;stopRangingBeaconsWithID:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopRangingAllBeacons">&ndash;&nbsp;stopRangingAllBeacons</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addBroadcastKey:">&ndash;&nbsp;addBroadcastKey:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/registerBeaconAppearWatcher:type:watcher:">&ndash;&nbsp;registerBeaconAppearWatcher:type:watcher:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rangedBeaconIDs">&ndash;&nbsp;rangedBeaconIDs</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Getting the Instance of Beacons" name="task_Getting the Instance of Beacons"></a>
+						<h3 class="subsubtitle task-title">Getting the Instance of Beacons</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beaconWithID:">&ndash;&nbsp;beaconWithID:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beaconWithCLBeacon:">&ndash;&nbsp;beaconWithCLBeacon:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beaconsInRange">&ndash;&nbsp;beaconsInRange</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allBeacons">&ndash;&nbsp;allBeacons</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/disableBLEPowerAlert">&ndash;&nbsp;disableBLEPowerAlert</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Configuration" name="task_Configuration"></a>
+						<h3 class="subsubtitle task-title">Configuration</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/outOfRangeDelay">&nbsp;&nbsp;outOfRangeDelay</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/version">&nbsp;&nbsp;version</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/duplicateKeyBLE">&nbsp;&nbsp;duplicateKeyBLE</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The delegate of the app object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;SBKBeaconManagerDelegate&gt; delegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The delegate of the app object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeaconManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/duplicateKeyBLE" title="duplicateKeyBLE"></a>
+	<h3 class="subsubtitle method-title">duplicateKeyBLE</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<ul>
+<li>Set whether enable duplicate key for scanning device in background mode.</li>
+<li>default is NO，To set this property before call startRangingBeaconsWithID.
+*</li>
+<li>@discussion if set this property to YES, the SDK will continuously receive packet from device,
+ but this increase the power consumption, NO, SDK will receive one packet from device unless this packet was changed.</li>
+</ul>
+
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readwrite, nonatomic) BOOL duplicateKeyBLE</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<ul>
+<li>Set whether enable duplicate key for scanning device in background mode.</li>
+<li>default is NO，To set this property before call startRangingBeaconsWithID.
+*</li>
+<li>@discussion if set this property to YES, the SDK will continuously receive packet from device,
+ but this increase the power consumption, NO, SDK will receive one packet from device unless this packet was changed.</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeaconManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/outOfRangeDelay" title="outOfRangeDelay"></a>
+	<h3 class="subsubtitle method-title">outOfRangeDelay</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Delay out of range notifications delivering.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readwrite, nonatomic) NSTimeInterval outOfRangeDelay</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Delay out of range notifications delivering.</p><p>In order to prevent notifications delivering too frequently, beacon will not be marked out of range immediately. Default value is 8 seconds, means a beacon will be marked out of range if it can not be ranged in last 8 seconds.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeaconManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/version" title="version"></a>
+	<h3 class="subsubtitle method-title">version</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>return current SDK version.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) NSString *version</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>return current SDK version.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeaconManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/sharedInstance" title="sharedInstance"></a>
+	<h3 class="subsubtitle method-title">sharedInstance</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the shared instance of the SBKBeaconManager class. Users are not allowed to create own instance.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (SBKBeaconManager *)sharedInstance</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the shared instance of the SBKBeaconManager class. Users are not allowed to create own instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeaconManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addBroadcastKey:" title="addBroadcastKey:"></a>
+	<h3 class="subsubtitle method-title">addBroadcastKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the secret info to decrypt the broadcast info.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)addBroadcastKey:(NSString *)<em>secretInfo</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>secretInfo</em></dt>
+			<dd><p>the secret info.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set the secret info to decrypt the broadcast info.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeaconManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/allBeacons" title="allBeacons"></a>
+	<h3 class="subsubtitle method-title">allBeacons</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get all the beacon instances.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)allBeacons</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Beacon instances in array.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get all the beacon instances.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeaconManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beaconWithCLBeacon:" title="beaconWithCLBeacon:"></a>
+	<h3 class="subsubtitle method-title">beaconWithCLBeacon:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the beacon instance with CLBeacon object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (SBKBeacon *)beaconWithCLBeacon:(CLBeacon *)<em>beacon</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>beacon</em></dt>
+			<dd><p>Using CLBeacon&rsquo;s uuid major minor to identify the sensoro beacon you want.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><a href="../Classes/SBKBeacon.html">SBKBeacon</a> instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the beacon instance with CLBeacon object.</p><p>This mehtod will return a sensoso beacon corresponding CLBeacon object. if this beacon is not a sensoro beacon, it will return nil. if there is a <a href="../Classes/SBKBeacon.html">SBKBeacon</a> with same uuid, major, minor, it will return this <a href="../Classes/SBKBeacon.html">SBKBeacon</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeaconManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beaconWithID:" title="beaconWithID:"></a>
+	<h3 class="subsubtitle method-title">beaconWithID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the beacon instance with <a href="../Classes/SBKBeaconID.html">SBKBeaconID</a> object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (SBKBeacon *)beaconWithID:(SBKBeaconID *)<em>beaconID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>beaconID</em></dt>
+			<dd><p>Using <a href="../Classes/SBKBeaconID.html">SBKBeaconID</a> object to identify the beacon you want.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Beacon instance.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the beacon instance with <a href="../Classes/SBKBeaconID.html">SBKBeaconID</a> object.</p><p>This mehtod will return nil if the beacon has not been ranged. The beacon with same ID will only have one instance.</p><div class="warning"><p><strong>Warning:</strong> The <a href="../Classes/SBKBeaconID.html">SBKBeaconID</a> object must have major and minor properties.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeaconManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beaconsInRange" title="beaconsInRange"></a>
+	<h3 class="subsubtitle method-title">beaconsInRange</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the beacon instances in range now.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)beaconsInRange</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Beacon instances in array, sorted by accuracy.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the beacon instances in range now.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeaconManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/disableBLEPowerAlert" title="disableBLEPowerAlert"></a>
+	<h3 class="subsubtitle method-title">disableBLEPowerAlert</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Disable the alert that was showed when BLE was power off. Defualt was show the alert dialog.
+You can call this method to disable this alert, before call other method.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)disableBLEPowerAlert</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Disable the alert that was showed when BLE was power off. Defualt was show the alert dialog.
+You can call this method to disable this alert, before call other method.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeaconManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rangedBeaconIDs" title="rangedBeaconIDs"></a>
+	<h3 class="subsubtitle method-title">rangedBeaconIDs</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The set of <a href="../Classes/SBKBeaconID.html">SBKBeaconID</a> currently being ranged.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSSet *)rangedBeaconIDs</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The objects in the set are instances of the <a href="../Classes/SBKBeaconID.html">SBKBeaconID</a> class</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The set of <a href="../Classes/SBKBeaconID.html">SBKBeaconID</a> currently being ranged.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeaconManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/registerBeaconAppearWatcher:type:watcher:" title="registerBeaconAppearWatcher:type:watcher:"></a>
+	<h3 class="subsubtitle method-title">registerBeaconAppearWatcher:type:watcher:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Regiser a watcher to do something for new beacon.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)registerBeaconAppearWatcher:(NSString *)<em>identifier</em> type:(u_int8_t)<em>type</em> watcher:(SBKBeaconWatcher)<em>watcher</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>identifier</em></dt>
+			<dd><p>serial number or uuid, major, minor (UUID|MAJOR|MINOR).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>identifier&rsquo;s type, 0: serial number, 1: uuid, major, minor.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>watcher</em></dt>
+			<dd><p>call this method when beacon will appear.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Regiser a watcher to do something for new beacon.</p><p>Regiser a watcher to do something for new beacon that need setting before call didRangeNewBeacon,
+for example set beacon&rsquo;s inRangeMinimumRssiWhileEntering. for every indentifier in lifetime just call once.
+To call didRangeNewBeacon for a beacon may be many times, because you can enter a beacon many times;</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeaconManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestAlwaysAuthorization" title="requestAlwaysAuthorization"></a>
+	<h3 class="subsubtitle method-title">requestAlwaysAuthorization</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Requests permission to use location services whenever the app is running.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)requestAlwaysAuthorization</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Requests permission to use location services whenever the app is running.</p><p>When the current authorization status is kCLAuthorizationStatusNotDetermined, calling this method prompts the user to grant permission to the app to use location services.The user prompt contains the text from the NSLocationAlwaysUsageDescription key in your app’s Info.plist file, and the presence of that key is required when calling this method. You must call this method or the <a href="#//api/name/requestWhenInUseAuthorization">requestWhenInUseAuthorization</a> method prior to using location services. If the current authorization status is anything other than kCLAuthorizationStatusNotDetermined, this method does nothing.
+for detail <a href="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/index.html#//apple_ref/occ/instm/CLLocationManager/requestAlwaysAuthorization">Apple&rsquo;s requestAlwaysAuthorization</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeaconManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestWhenInUseAuthorization" title="requestWhenInUseAuthorization"></a>
+	<h3 class="subsubtitle method-title">requestWhenInUseAuthorization</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Requests permission to use location services while the app is in the foreground.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)requestWhenInUseAuthorization</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Requests permission to use location services while the app is in the foreground.</p>
+
+<p>When the current authorization status is kCLAuthorizationStatusNotDetermined, calling this method prompts the user to grant permission to the app to use location services. The user prompt contains the text from the NSLocationWhenInUseUsageDescription key in your app’s Info.plist file, and the presence of that key is required when calling this method. You must call this method or the <a href="#//api/name/requestAlwaysAuthorization">requestAlwaysAuthorization</a> method prior to using location services. If the current authorization status is anything other than kCLAuthorizationStatusNotDetermined, this method does nothing.
+for detail <a href="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/index.html#//apple_ref/occ/instm/CLLocationManager/requestWhenInUseAuthorization">Apple&rsquo;s requestWhenInUseAuthorization</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeaconManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startRangingBeaconsWithID:wakeUpApplication:" title="startRangingBeaconsWithID:wakeUpApplication:"></a>
+	<h3 class="subsubtitle method-title">startRangingBeaconsWithID:wakeUpApplication:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Starts the delivery of notifications for beacons with specified id.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)startRangingBeaconsWithID:(SBKBeaconID *)<em>beaconID</em> wakeUpApplication:(BOOL)<em>wakeUpApplication</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>beaconID</em></dt>
+			<dd><p>Using <a href="../Classes/SBKBeaconID.html">SBKBeaconID</a> object to identify the beacons.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>wakeUpApplication</em></dt>
+			<dd><p>Wake up your application in background when those beacons being ranged.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Starts the delivery of notifications for beacons with specified id.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeaconManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopRangingAllBeacons" title="stopRangingAllBeacons"></a>
+	<h3 class="subsubtitle method-title">stopRangingAllBeacons</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stops the delivery of notifications for all beacons.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)stopRangingAllBeacons</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Stops the delivery of notifications for all beacons.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeaconManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopRangingBeaconsWithID:" title="stopRangingBeaconsWithID:"></a>
+	<h3 class="subsubtitle method-title">stopRangingBeaconsWithID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stops the delivery of notifications for beacons with specified id.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)stopRangingBeaconsWithID:(SBKBeaconID *)<em>beaconID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>beaconID</em></dt>
+			<dd><p>Using <a href="../Classes/SBKBeaconID.html">SBKBeaconID</a> object to identify the beacons.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Stops the delivery of notifications for beacons with specified id.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeaconManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+                    
+                    
+
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2017 Sensoro, Inc. All rights reserved. (Last updated: 2017-01-03)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

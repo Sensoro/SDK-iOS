@@ -1,3 +1,8 @@
+4.2.0 Change List
+
+1. Support firmware 4.4
+2. Support new hardware Model C8
+
 4.1.9 Change List
 
 1. Enable bitcode.

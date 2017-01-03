@@ -175,6 +175,7 @@
 				TargetAttributes = {
 					469F7FF91978F4AA00A4B7D4 = {
 						DevelopmentTeam = 8E42QMX22R;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -329,6 +330,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8E42QMX22R;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SBK Demo/SBK Demo-Prefix.pch";
 				INFOPLIST_FILE = "SBK Demo/SBK Demo-Info.plist";
@@ -338,7 +340,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sensoro.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "259a22b4-5729-4c61-a572-c085a1b425a1";
+				PROVISIONING_PROFILE_SPECIFIER = "Sensoro Common Development Profile";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -349,7 +352,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 8E42QMX22R;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SBK Demo/SBK Demo-Prefix.pch";
 				INFOPLIST_FILE = "SBK Demo/SBK Demo-Info.plist";
@@ -359,7 +363,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sensoro.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "d15e3fec-268d-4f50-a4a3-d1c6037476b0";
+				PROVISIONING_PROFILE_SPECIFIER = "Wildcard In House Distribution Profile";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

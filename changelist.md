@@ -1,3 +1,8 @@
+4.2.0 Change List
+
+1. 支持固件 4.4
+2. 支持新的硬件Model C8
+
 4.1.9 Change List
 
 1. 开启 Bitcode 模式.

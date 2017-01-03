@@ -1,0 +1,5057 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SBKBeacon Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Sensoro Beacon Kit </a></h1>
+				<a id="developerHome" href="../index.html">Sensoro, Inc</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SBKBeacon Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/accelerometerCount">&nbsp;&nbsp;&nbsp;&nbsp;accelerometerCount</option>
+	
+	<option value="//api/name/accuracy">&nbsp;&nbsp;&nbsp;&nbsp;accuracy</option>
+	
+	<option value="//api/name/aliBeacon">&nbsp;&nbsp;&nbsp;&nbsp;aliBeacon</option>
+	
+	<option value="//api/name/assignedPeripheral">&nbsp;&nbsp;&nbsp;&nbsp;assignedPeripheral</option>
+	
+	<option value="//api/name/baseSettings">&nbsp;&nbsp;&nbsp;&nbsp;baseSettings</option>
+	
+	<option value="//api/name/batteryLevel">&nbsp;&nbsp;&nbsp;&nbsp;batteryLevel</option>
+	
+	<option value="//api/name/beaconID">&nbsp;&nbsp;&nbsp;&nbsp;beaconID</option>
+	
+	<option value="//api/name/broadcastInterval">&nbsp;&nbsp;&nbsp;&nbsp;broadcastInterval</option>
+	
+	<option value="//api/name/broadcastTransmitPower">&nbsp;&nbsp;&nbsp;&nbsp;broadcastTransmitPower</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/eddystoneBID">&nbsp;&nbsp;&nbsp;&nbsp;eddystoneBID</option>
+	
+	<option value="//api/name/eddystoneBatteryVoltage">&nbsp;&nbsp;&nbsp;&nbsp;eddystoneBatteryVoltage</option>
+	
+	<option value="//api/name/eddystoneEnabled">&nbsp;&nbsp;&nbsp;&nbsp;eddystoneEnabled</option>
+	
+	<option value="//api/name/eddystoneNID">&nbsp;&nbsp;&nbsp;&nbsp;eddystoneNID</option>
+	
+	<option value="//api/name/eddystonePduCount">&nbsp;&nbsp;&nbsp;&nbsp;eddystonePduCount</option>
+	
+	<option value="//api/name/eddystoneTLMEnabled">&nbsp;&nbsp;&nbsp;&nbsp;eddystoneTLMEnabled</option>
+	
+	<option value="//api/name/eddystoneTLMInterval">&nbsp;&nbsp;&nbsp;&nbsp;eddystoneTLMInterval</option>
+	
+	<option value="//api/name/eddystoneUIDEnabled">&nbsp;&nbsp;&nbsp;&nbsp;eddystoneUIDEnabled</option>
+	
+	<option value="//api/name/eddystoneURLEnabled">&nbsp;&nbsp;&nbsp;&nbsp;eddystoneURLEnabled</option>
+	
+	<option value="//api/name/eddystoneUrl">&nbsp;&nbsp;&nbsp;&nbsp;eddystoneUrl</option>
+	
+	<option value="//api/name/eddystoneWorkedTime">&nbsp;&nbsp;&nbsp;&nbsp;eddystoneWorkedTime</option>
+	
+	<option value="//api/name/enhanceBroadcast">&nbsp;&nbsp;&nbsp;&nbsp;enhanceBroadcast</option>
+	
+	<option value="//api/name/firmwareVersion">&nbsp;&nbsp;&nbsp;&nbsp;firmwareVersion</option>
+	
+	<option value="//api/name/hardwareModelName">&nbsp;&nbsp;&nbsp;&nbsp;hardwareModelName</option>
+	
+	<option value="//api/name/inEnergySaving">&nbsp;&nbsp;&nbsp;&nbsp;inEnergySaving</option>
+	
+	<option value="//api/name/inRange">&nbsp;&nbsp;&nbsp;&nbsp;inRange</option>
+	
+	<option value="//api/name/inRangeMinimumRssiWhileEntering">&nbsp;&nbsp;&nbsp;&nbsp;inRangeMinimumRssiWhileEntering</option>
+	
+	<option value="//api/name/inRangeMinimumRssiWhileLeaving">&nbsp;&nbsp;&nbsp;&nbsp;inRangeMinimumRssiWhileLeaving</option>
+	
+	<option value="//api/name/light">&nbsp;&nbsp;&nbsp;&nbsp;light</option>
+	
+	<option value="//api/name/moving">&nbsp;&nbsp;&nbsp;&nbsp;moving</option>
+	
+	<option value="//api/name/proximity">&nbsp;&nbsp;&nbsp;&nbsp;proximity</option>
+	
+	<option value="//api/name/rssi">&nbsp;&nbsp;&nbsp;&nbsp;rssi</option>
+	
+	<option value="//api/name/secureBroadcastInterval">&nbsp;&nbsp;&nbsp;&nbsp;secureBroadcastInterval</option>
+	
+	<option value="//api/name/sensorSettings">&nbsp;&nbsp;&nbsp;&nbsp;sensorSettings</option>
+	
+	<option value="//api/name/serialNumber">&nbsp;&nbsp;&nbsp;&nbsp;serialNumber</option>
+	
+	<option value="//api/name/shakeToLightOn">&nbsp;&nbsp;&nbsp;&nbsp;shakeToLightOn</option>
+	
+	<option value="//api/name/temperature">&nbsp;&nbsp;&nbsp;&nbsp;temperature</option>
+	
+	<option value="//api/name/workModel">&nbsp;&nbsp;&nbsp;&nbsp;workModel</option>
+	
+	<option value="//api/name/writePermissionStatus">&nbsp;&nbsp;&nbsp;&nbsp;writePermissionStatus</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/availableEnergySavingMode">&nbsp;&nbsp;&nbsp;&nbsp;- availableEnergySavingMode</option>
+	
+	<option value="//api/name/clearBroadcastKeyWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- clearBroadcastKeyWithCompletion:</option>
+	
+	<option value="//api/name/clearWritePasswordWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- clearWritePasswordWithCompletion:</option>
+	
+	<option value="//api/name/connectWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- connectWithCompletion:</option>
+	
+	<option value="//api/name/connectionStatus">&nbsp;&nbsp;&nbsp;&nbsp;- connectionStatus</option>
+	
+	<option value="//api/name/disableAliBeaconWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- disableAliBeaconWithCompletion:</option>
+	
+	<option value="//api/name/disableEnhanceBroadcastWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- disableEnhanceBroadcastWithCompletion:</option>
+	
+	<option value="//api/name/disableSecondaryiBeaconWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- disableSecondaryiBeaconWithCompletion:</option>
+	
+	<option value="//api/name/disableiBeaconWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- disableiBeaconWithCompletion:</option>
+	
+	<option value="//api/name/disconnect">&nbsp;&nbsp;&nbsp;&nbsp;- disconnect</option>
+	
+	<option value="//api/name/eddystonePackage:enable:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- eddystonePackage:enable:completion:</option>
+	
+	<option value="//api/name/enableAliBeaconWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- enableAliBeaconWithCompletion:</option>
+	
+	<option value="//api/name/enableEnhanceBroadcastWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- enableEnhanceBroadcastWithCompletion:</option>
+	
+	<option value="//api/name/enableSecondaryiBeaconWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- enableSecondaryiBeaconWithCompletion:</option>
+	
+	<option value="//api/name/enableiBeaconWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- enableiBeaconWithCompletion:</option>
+	
+	<option value="//api/name/flashLightWithCommand:repeat:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- flashLightWithCommand:repeat:completion:</option>
+	
+	<option value="//api/name/isAccelerometerAvailable">&nbsp;&nbsp;&nbsp;&nbsp;- isAccelerometerAvailable</option>
+	
+	<option value="//api/name/isBeacon">&nbsp;&nbsp;&nbsp;&nbsp;- isBeacon</option>
+	
+	<option value="//api/name/isLightSensorAvailable">&nbsp;&nbsp;&nbsp;&nbsp;- isLightSensorAvailable</option>
+	
+	<option value="//api/name/isSensor">&nbsp;&nbsp;&nbsp;&nbsp;- isSensor</option>
+	
+	<option value="//api/name/isTemperatureSensorAvailable">&nbsp;&nbsp;&nbsp;&nbsp;- isTemperatureSensorAvailable</option>
+	
+	<option value="//api/name/reloadSensorDataWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- reloadSensorDataWithCompletion:</option>
+	
+	<option value="//api/name/requireWritePermissionWithPassword:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- requireWritePermissionWithPassword:completion:</option>
+	
+	<option value="//api/name/resetAccelerometerCountWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- resetAccelerometerCountWithCompletion:</option>
+	
+	<option value="//api/name/resetToFactorySettingsWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- resetToFactorySettingsWithCompletion:</option>
+	
+	<option value="//api/name/switchToPureEddystoneModeWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- switchToPureEddystoneModeWithCompletion:</option>
+	
+	<option value="//api/name/updateWritePassword:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- updateWritePassword:completion:</option>
+	
+	<option value="//api/name/writeBaseSettings:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeBaseSettings:completion:</option>
+	
+	<option value="//api/name/writeBroadcastKey:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeBroadcastKey:completion:</option>
+	
+	<option value="//api/name/writeEddystoneBID:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeEddystoneBID:completion:</option>
+	
+	<option value="//api/name/writeEddystoneNID:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeEddystoneNID:completion:</option>
+	
+	<option value="//api/name/writeEddystoneTLMInterval:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeEddystoneTLMInterval:completion:</option>
+	
+	<option value="//api/name/writeEddystoneUrl:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeEddystoneUrl:completion:</option>
+	
+	<option value="//api/name/writeMajor:minor:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeMajor:minor:completion:</option>
+	
+	<option value="//api/name/writeProximityUUID:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeProximityUUID:completion:</option>
+	
+	<option value="//api/name/writeSecondaryMajor:secondaryMinor:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeSecondaryMajor:secondaryMinor:completion:</option>
+	
+	<option value="//api/name/writeSecondaryProximityUUID:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeSecondaryProximityUUID:completion:</option>
+	
+	<option value="//api/name/writeSecureBroadcastInterval:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeSecureBroadcastInterval:completion:</option>
+	
+	<option value="//api/name/writeSensorSettings:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeSensorSettings:completion:</option>
+	
+	<option value="//api/name/writeShakeToLightOnState:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeShakeToLightOnState:completion:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Setting and Getting the Delegate">Setting and Getting the Delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_General Properties">General Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Establishing or Canceling Connections with Beacon">Establishing or Canceling Connections with Beacon</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Beacon Configuration">Beacon Configuration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Writing Authorization">Writing Authorization</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Temperature, Light and Accelerometer Sensor">Temperature, Light and Accelerometer Sensor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Bridge to Core Bluetooth">Bridge to Core Bluetooth</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Eddystone.">Eddystone.</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/accelerometerCount">accelerometerCount</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/accuracy">accuracy</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/aliBeacon">aliBeacon</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/assignedPeripheral">assignedPeripheral</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/baseSettings">baseSettings</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/batteryLevel">batteryLevel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beaconID">beaconID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/broadcastInterval">broadcastInterval</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/broadcastTransmitPower">broadcastTransmitPower</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/eddystoneBID">eddystoneBID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/eddystoneBatteryVoltage">eddystoneBatteryVoltage</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/eddystoneEnabled">eddystoneEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/eddystoneNID">eddystoneNID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/eddystonePduCount">eddystonePduCount</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/eddystoneTLMEnabled">eddystoneTLMEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/eddystoneTLMInterval">eddystoneTLMInterval</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/eddystoneUIDEnabled">eddystoneUIDEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/eddystoneURLEnabled">eddystoneURLEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/eddystoneUrl">eddystoneUrl</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/eddystoneWorkedTime">eddystoneWorkedTime</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enhanceBroadcast">enhanceBroadcast</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/firmwareVersion">firmwareVersion</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hardwareModelName">hardwareModelName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inEnergySaving">inEnergySaving</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inRange">inRange</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inRangeMinimumRssiWhileEntering">inRangeMinimumRssiWhileEntering</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inRangeMinimumRssiWhileLeaving">inRangeMinimumRssiWhileLeaving</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/light">light</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/moving">moving</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/proximity">proximity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rssi">rssi</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/secureBroadcastInterval">secureBroadcastInterval</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sensorSettings">sensorSettings</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/serialNumber">serialNumber</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shakeToLightOn">shakeToLightOn</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/temperature">temperature</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/workModel">workModel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writePermissionStatus">writePermissionStatus</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/availableEnergySavingMode">availableEnergySavingMode</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clearBroadcastKeyWithCompletion:">clearBroadcastKeyWithCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clearWritePasswordWithCompletion:">clearWritePasswordWithCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectWithCompletion:">connectWithCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectionStatus">connectionStatus</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disableAliBeaconWithCompletion:">disableAliBeaconWithCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disableEnhanceBroadcastWithCompletion:">disableEnhanceBroadcastWithCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disableSecondaryiBeaconWithCompletion:">disableSecondaryiBeaconWithCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disableiBeaconWithCompletion:">disableiBeaconWithCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disconnect">disconnect</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/eddystonePackage:enable:completion:">eddystonePackage:enable:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enableAliBeaconWithCompletion:">enableAliBeaconWithCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enableEnhanceBroadcastWithCompletion:">enableEnhanceBroadcastWithCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enableSecondaryiBeaconWithCompletion:">enableSecondaryiBeaconWithCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enableiBeaconWithCompletion:">enableiBeaconWithCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flashLightWithCommand:repeat:completion:">flashLightWithCommand:repeat:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isAccelerometerAvailable">isAccelerometerAvailable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isBeacon">isBeacon</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isLightSensorAvailable">isLightSensorAvailable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isSensor">isSensor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isTemperatureSensorAvailable">isTemperatureSensorAvailable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reloadSensorDataWithCompletion:">reloadSensorDataWithCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requireWritePermissionWithPassword:completion:">requireWritePermissionWithPassword:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resetAccelerometerCountWithCompletion:">resetAccelerometerCountWithCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resetToFactorySettingsWithCompletion:">resetToFactorySettingsWithCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/switchToPureEddystoneModeWithCompletion:">switchToPureEddystoneModeWithCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateWritePassword:completion:">updateWritePassword:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeBaseSettings:completion:">writeBaseSettings:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeBroadcastKey:completion:">writeBroadcastKey:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeEddystoneBID:completion:">writeEddystoneBID:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeEddystoneNID:completion:">writeEddystoneNID:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeEddystoneTLMInterval:completion:">writeEddystoneTLMInterval:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeEddystoneUrl:completion:">writeEddystoneUrl:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeMajor:minor:completion:">writeMajor:minor:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeProximityUUID:completion:">writeProximityUUID:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeSecondaryMajor:secondaryMinor:completion:">writeSecondaryMajor:secondaryMinor:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeSecondaryProximityUUID:completion:">writeSecondaryProximityUUID:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeSecureBroadcastInterval:completion:">writeSecureBroadcastInterval:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeSensorSettings:completion:">writeSensorSettings:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeShakeToLightOnState:completion:">writeShakeToLightOnState:completion:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SBKBeacon Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SBKBeacon Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SBKBeacon.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The SBKBeacon class defines the interface of a sensoro beacon device. You can use instances of this class to get <a href="#//api/name/rssi">rssi</a>, sensor data or configurate device settings. You do not create instances of this class directly. Use <a href="../Classes/SBKBeaconManager.html">SBKBeaconManager</a> to get SBKBeacon instances.</p>
+
+<p>The identity of a beacon is defined by its <a href="#//api/name/beaconID">beaconID</a> properties.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Setting and Getting the Delegate" name="task_Setting and Getting the Delegate"></a>
+						<h3 class="subsubtitle task-title">Setting and Getting the Delegate</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="General Properties" name="task_General Properties"></a>
+						<h3 class="subsubtitle task-title">General Properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/beaconID">&nbsp;&nbsp;beaconID</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/serialNumber">&nbsp;&nbsp;serialNumber</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inRange">&nbsp;&nbsp;inRange</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inRangeMinimumRssiWhileEntering">&nbsp;&nbsp;inRangeMinimumRssiWhileEntering</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inRangeMinimumRssiWhileLeaving">&nbsp;&nbsp;inRangeMinimumRssiWhileLeaving</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rssi">&nbsp;&nbsp;rssi</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/proximity">&nbsp;&nbsp;proximity</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/accuracy">&nbsp;&nbsp;accuracy</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/batteryLevel">&nbsp;&nbsp;batteryLevel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hardwareModelName">&nbsp;&nbsp;hardwareModelName</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/firmwareVersion">&nbsp;&nbsp;firmwareVersion</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/workModel">&nbsp;&nbsp;workModel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Establishing or Canceling Connections with Beacon" name="task_Establishing or Canceling Connections with Beacon"></a>
+						<h3 class="subsubtitle task-title">Establishing or Canceling Connections with Beacon</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectWithCompletion:">&ndash;&nbsp;connectWithCompletion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/disconnect">&ndash;&nbsp;disconnect</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectionStatus">&ndash;&nbsp;connectionStatus</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Beacon Configuration" name="task_Beacon Configuration"></a>
+						<h3 class="subsubtitle task-title">Beacon Configuration</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/baseSettings">&nbsp;&nbsp;baseSettings</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sensorSettings">&nbsp;&nbsp;sensorSettings</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/secureBroadcastInterval">&nbsp;&nbsp;secureBroadcastInterval</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeProximityUUID:completion:">&ndash;&nbsp;writeProximityUUID:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeMajor:minor:completion:">&ndash;&nbsp;writeMajor:minor:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeSecondaryProximityUUID:completion:">&ndash;&nbsp;writeSecondaryProximityUUID:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeSecondaryMajor:secondaryMinor:completion:">&ndash;&nbsp;writeSecondaryMajor:secondaryMinor:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeBaseSettings:completion:">&ndash;&nbsp;writeBaseSettings:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeSensorSettings:completion:">&ndash;&nbsp;writeSensorSettings:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resetToFactorySettingsWithCompletion:">&ndash;&nbsp;resetToFactorySettingsWithCompletion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeSecureBroadcastInterval:completion:">&ndash;&nbsp;writeSecureBroadcastInterval:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeBroadcastKey:completion:">&ndash;&nbsp;writeBroadcastKey:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clearBroadcastKeyWithCompletion:">&ndash;&nbsp;clearBroadcastKeyWithCompletion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/disableiBeaconWithCompletion:">&ndash;&nbsp;disableiBeaconWithCompletion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enableiBeaconWithCompletion:">&ndash;&nbsp;enableiBeaconWithCompletion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/disableSecondaryiBeaconWithCompletion:">&ndash;&nbsp;disableSecondaryiBeaconWithCompletion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enableSecondaryiBeaconWithCompletion:">&ndash;&nbsp;enableSecondaryiBeaconWithCompletion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/disableAliBeaconWithCompletion:">&ndash;&nbsp;disableAliBeaconWithCompletion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enableAliBeaconWithCompletion:">&ndash;&nbsp;enableAliBeaconWithCompletion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/disableEnhanceBroadcastWithCompletion:">&ndash;&nbsp;disableEnhanceBroadcastWithCompletion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enableEnhanceBroadcastWithCompletion:">&ndash;&nbsp;enableEnhanceBroadcastWithCompletion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/flashLightWithCommand:repeat:completion:">&ndash;&nbsp;flashLightWithCommand:repeat:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/switchToPureEddystoneModeWithCompletion:">&ndash;&nbsp;switchToPureEddystoneModeWithCompletion:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Writing Authorization" name="task_Writing Authorization"></a>
+						<h3 class="subsubtitle task-title">Writing Authorization</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writePermissionStatus">&nbsp;&nbsp;writePermissionStatus</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requireWritePermissionWithPassword:completion:">&ndash;&nbsp;requireWritePermissionWithPassword:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateWritePassword:completion:">&ndash;&nbsp;updateWritePassword:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clearWritePasswordWithCompletion:">&ndash;&nbsp;clearWritePasswordWithCompletion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/availableEnergySavingMode">&ndash;&nbsp;availableEnergySavingMode</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Temperature, Light and Accelerometer Sensor" name="task_Temperature, Light and Accelerometer Sensor"></a>
+						<h3 class="subsubtitle task-title">Temperature, Light and Accelerometer Sensor</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reloadSensorDataWithCompletion:">&ndash;&nbsp;reloadSensorDataWithCompletion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isTemperatureSensorAvailable">&ndash;&nbsp;isTemperatureSensorAvailable</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isLightSensorAvailable">&ndash;&nbsp;isLightSensorAvailable</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isAccelerometerAvailable">&ndash;&nbsp;isAccelerometerAvailable</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isBeacon">&ndash;&nbsp;isBeacon</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isSensor">&ndash;&nbsp;isSensor</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/temperature">&nbsp;&nbsp;temperature</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/light">&nbsp;&nbsp;light</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/broadcastTransmitPower">&nbsp;&nbsp;broadcastTransmitPower</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/broadcastInterval">&nbsp;&nbsp;broadcastInterval</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inEnergySaving">&nbsp;&nbsp;inEnergySaving</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/aliBeacon">&nbsp;&nbsp;aliBeacon</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enhanceBroadcast">&nbsp;&nbsp;enhanceBroadcast</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/eddystoneEnabled">&nbsp;&nbsp;eddystoneEnabled</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/accelerometerCount">&nbsp;&nbsp;accelerometerCount</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/moving">&nbsp;&nbsp;moving</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shakeToLightOn">&nbsp;&nbsp;shakeToLightOn</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resetAccelerometerCountWithCompletion:">&ndash;&nbsp;resetAccelerometerCountWithCompletion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeShakeToLightOnState:completion:">&ndash;&nbsp;writeShakeToLightOnState:completion:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Bridge to Core Bluetooth" name="task_Bridge to Core Bluetooth"></a>
+						<h3 class="subsubtitle task-title">Bridge to Core Bluetooth</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/assignedPeripheral">&nbsp;&nbsp;assignedPeripheral</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Eddystone." name="task_Eddystone."></a>
+						<h3 class="subsubtitle task-title">Eddystone.</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/eddystoneUIDEnabled">&nbsp;&nbsp;eddystoneUIDEnabled</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/eddystoneURLEnabled">&nbsp;&nbsp;eddystoneURLEnabled</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/eddystoneTLMEnabled">&nbsp;&nbsp;eddystoneTLMEnabled</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/eddystoneNID">&nbsp;&nbsp;eddystoneNID</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/eddystoneBID">&nbsp;&nbsp;eddystoneBID</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/eddystoneTLMInterval">&nbsp;&nbsp;eddystoneTLMInterval</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/eddystoneUrl">&nbsp;&nbsp;eddystoneUrl</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/eddystoneBatteryVoltage">&nbsp;&nbsp;eddystoneBatteryVoltage</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/eddystonePduCount">&nbsp;&nbsp;eddystonePduCount</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/eddystoneWorkedTime">&nbsp;&nbsp;eddystoneWorkedTime</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeEddystoneUrl:completion:">&ndash;&nbsp;writeEddystoneUrl:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/eddystonePackage:enable:completion:">&ndash;&nbsp;eddystonePackage:enable:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeEddystoneTLMInterval:completion:">&ndash;&nbsp;writeEddystoneTLMInterval:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeEddystoneNID:completion:">&ndash;&nbsp;writeEddystoneNID:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeEddystoneBID:completion:">&ndash;&nbsp;writeEddystoneBID:completion:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/accelerometerCount" title="accelerometerCount"></a>
+	<h3 class="subsubtitle method-title">accelerometerCount</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The number of accelerometer count.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, copy) NSNumber *accelerometerCount</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The number of accelerometer count.</p><p>Sensor data can only be updated when the app is running in the foreground.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/accuracy" title="accuracy"></a>
+	<h3 class="subsubtitle method-title">accuracy</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The accuracy of the <a href="#//api/name/proximity">proximity</a> value, measured in meters from the beacon. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) CLLocationAccuracy accuracy</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The accuracy of the <a href="#//api/name/proximity">proximity</a> value, measured in meters from the beacon. (read-only)</p><p>Indicates the one sigma horizontal accuracy in meters. Use this property to differentiate between beacons with the same <a href="#//api/name/proximity">proximity</a> value. Do not use it to identify a precise location for the beacon. Accuracy values may fluctuate due to RF interference. A negative value in this property signifies that the actual accuracy could not be determined.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/aliBeacon" title="aliBeacon"></a>
+	<h3 class="subsubtitle method-title">aliBeacon</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The flag whether device is broadcasting ali beacon info.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSNumber *aliBeacon</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The flag whether device is broadcasting ali beacon info.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/assignedPeripheral" title="assignedPeripheral"></a>
+	<h3 class="subsubtitle method-title">assignedPeripheral</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The CBPeripheral object assign to this beacon.this object may be changed continuously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong) CBPeripheral *assignedPeripheral</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The CBPeripheral object assign to this beacon.this object may be changed continuously.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/baseSettings" title="baseSettings"></a>
+	<h3 class="subsubtitle method-title">baseSettings</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The dictionary of beacon base configuration attributes. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) NSDictionary *baseSettings</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The dictionary of beacon base configuration attributes. (read-only)</p><p>This property will be available after connect. For available options, see SBKBeaconBaseSettings.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/writeBaseSettings:completion:">- writeBaseSettings:completion:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/batteryLevel" title="batteryLevel"></a>
+	<h3 class="subsubtitle method-title">batteryLevel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The battery charge level for the device. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, copy) NSNumber *batteryLevel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The battery charge level for the device. (read-only)</p><p>Battery level ranges from 0.0 to 1.0 (100% charged).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/beaconID" title="beaconID"></a>
+	<h3 class="subsubtitle method-title">beaconID</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A <a href="../Classes/SBKBeaconID.html">SBKBeaconID</a> object identify the beacon. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, copy) SBKBeaconID *beaconID</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A <a href="../Classes/SBKBeaconID.html">SBKBeaconID</a> object identify the beacon. (read-only)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/broadcastInterval" title="broadcastInterval"></a>
+	<h3 class="subsubtitle method-title">broadcastInterval</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The broadcast transmit interval.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSNumber *broadcastInterval</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The broadcast transmit interval.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/broadcastTransmitPower" title="broadcastTransmitPower"></a>
+	<h3 class="subsubtitle method-title">broadcastTransmitPower</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The broadcast transmit power.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSNumber *broadcastTransmitPower</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The broadcast transmit power.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Constants/SBKBeaconTransmitPower.html">SBKBeaconTransmitPower</a>.</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The delegate of the app object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readwrite, nonatomic, weak) id&lt;SBKBeaconDelegate&gt; delegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The delegate of the app object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/eddystoneBID" title="eddystoneBID"></a>
+	<h3 class="subsubtitle method-title">eddystoneBID</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The BID of UID packet of eddystone.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) NSData *eddystoneBID</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The BID of UID packet of eddystone.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/eddystoneBatteryVoltage" title="eddystoneBatteryVoltage"></a>
+	<h3 class="subsubtitle method-title">eddystoneBatteryVoltage</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The battery voltage of TLM packet of eddystone.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) NSNumber *eddystoneBatteryVoltage</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The battery voltage of TLM packet of eddystone.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/eddystoneEnabled" title="eddystoneEnabled"></a>
+	<h3 class="subsubtitle method-title">eddystoneEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The flag whether beacon is in eddystone broadcast mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSNumber *eddystoneEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The flag whether beacon is in eddystone broadcast mode.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/eddystoneNID" title="eddystoneNID"></a>
+	<h3 class="subsubtitle method-title">eddystoneNID</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The NID of UID packet of eddystone.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) NSData *eddystoneNID</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The NID of UID packet of eddystone.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/eddystonePduCount" title="eddystonePduCount"></a>
+	<h3 class="subsubtitle method-title">eddystonePduCount</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The PDU count of TLM packet of eddystone.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) NSNumber *eddystonePduCount</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The PDU count of TLM packet of eddystone.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/eddystoneTLMEnabled" title="eddystoneTLMEnabled"></a>
+	<h3 class="subsubtitle method-title">eddystoneTLMEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The flag whether TLM packet of eddystone is broadcasted.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) NSNumber *eddystoneTLMEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The flag whether TLM packet of eddystone is broadcasted.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/eddystoneTLMInterval" title="eddystoneTLMInterval"></a>
+	<h3 class="subsubtitle method-title">eddystoneTLMInterval</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The interval of TLM packet of eddystone.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) NSNumber *eddystoneTLMInterval</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The interval of TLM packet of eddystone.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/eddystoneUIDEnabled" title="eddystoneUIDEnabled"></a>
+	<h3 class="subsubtitle method-title">eddystoneUIDEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The flag whether UID packet of eddystone is broadcasted.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) NSNumber *eddystoneUIDEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The flag whether UID packet of eddystone is broadcasted.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/eddystoneURLEnabled" title="eddystoneURLEnabled"></a>
+	<h3 class="subsubtitle method-title">eddystoneURLEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The flag whether URL packet of eddystone is broadcasted.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) NSNumber *eddystoneURLEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The flag whether URL packet of eddystone is broadcasted.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/eddystoneUrl" title="eddystoneUrl"></a>
+	<h3 class="subsubtitle method-title">eddystoneUrl</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The URL of URL packet of eddystone.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) NSString *eddystoneUrl</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The URL of URL packet of eddystone.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/eddystoneWorkedTime" title="eddystoneWorkedTime"></a>
+	<h3 class="subsubtitle method-title">eddystoneWorkedTime</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The wored time since reboot or power on of TLM packet of eddystone.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) NSNumber *eddystoneWorkedTime</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The wored time since reboot or power on of TLM packet of eddystone.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enhanceBroadcast" title="enhanceBroadcast"></a>
+	<h3 class="subsubtitle method-title">enhanceBroadcast</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The flag whether beacon is in enhance broadcast mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSNumber *enhanceBroadcast</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The flag whether beacon is in enhance broadcast mode.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/firmwareVersion" title="firmwareVersion"></a>
+	<h3 class="subsubtitle method-title">firmwareVersion</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current firmware version for the device. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, copy) NSString *firmwareVersion</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The current firmware version for the device. (read-only)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hardwareModelName" title="hardwareModelName"></a>
+	<h3 class="subsubtitle method-title">hardwareModelName</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The model of the device. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, copy) NSString *hardwareModelName</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The model of the device. (read-only)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inEnergySaving" title="inEnergySaving"></a>
+	<h3 class="subsubtitle method-title">inEnergySaving</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The flag whether beacon is in energy saving mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSNumber *inEnergySaving</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The flag whether beacon is in energy saving mode.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inRange" title="inRange"></a>
+	<h3 class="subsubtitle method-title">inRange</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a Boolean value that indicates whether the beacon is in range. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, assign) BOOL inRange</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a Boolean value that indicates whether the beacon is in range. (read-only)</p><p>Beacon will be marked out of range after approximate 8 second in order to prevent notifications delivering too frequently.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inRangeMinimumRssiWhileEntering" title="inRangeMinimumRssiWhileEntering"></a>
+	<h3 class="subsubtitle method-title">inRangeMinimumRssiWhileEntering</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>the <a href="#//api/name/rssi">rssi</a> value to decide if entering range of beacon.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readwrite, nonatomic, assign) NSInteger inRangeMinimumRssiWhileEntering</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>the <a href="#//api/name/rssi">rssi</a> value to decide if entering range of beacon.</p><p>if received <a href="#//api/name/rssi">rssi</a> is larger than this value, it is in range of this beacon.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inRangeMinimumRssiWhileLeaving" title="inRangeMinimumRssiWhileLeaving"></a>
+	<h3 class="subsubtitle method-title">inRangeMinimumRssiWhileLeaving</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>the <a href="#//api/name/rssi">rssi</a> value to decide if leaving range of beacon.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readwrite, nonatomic, assign) NSInteger inRangeMinimumRssiWhileLeaving</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>the <a href="#//api/name/rssi">rssi</a> value to decide if leaving range of beacon.</p><p>if received <a href="#//api/name/rssi">rssi</a> is less than this value, it is out of range of this beacon.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/light" title="light"></a>
+	<h3 class="subsubtitle method-title">light</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The ambient light level in lux.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, copy) NSNumber *light</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The ambient light level in lux.</p><p>Sensor data can only be updated when the app is running in the foreground.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/moving" title="moving"></a>
+	<h3 class="subsubtitle method-title">moving</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Flag indicating accelerometer state, boolean value wrapped in NSNumber.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, copy, getter=isMoving) NSNumber *moving</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Flag indicating accelerometer state, boolean value wrapped in NSNumber.</p><p>Sensor data can only be updated when the app is running in the foreground.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/proximity" title="proximity"></a>
+	<h3 class="subsubtitle method-title">proximity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The relative distance to the beacon. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, assign) CLProximity proximity</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The relative distance to the beacon. (read-only)</p><p>The value in this property gives a general sense of the relative distance to the beacon. Use it to quickly identify beacons that are nearer to the user rather than farther away.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rssi" title="rssi"></a>
+	<h3 class="subsubtitle method-title">rssi</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The received signal strength of the beacon, measured in decibels. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, assign) NSInteger rssi</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The received signal strength of the beacon, measured in decibels. (read-only)</p><p>If beacon is out of range, the value will be 0.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/secureBroadcastInterval" title="secureBroadcastInterval"></a>
+	<h3 class="subsubtitle method-title">secureBroadcastInterval</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The value of sensor umm change interval attributes. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) SBKBeaconSecureBroadcastInterval secureBroadcastInterval</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The value of sensor umm change interval attributes. (read-only)</p>
+
+<p>you can change value, @see <a href="#//api/name/writeSecureBroadcastInterval:completion:">writeSecureBroadcastInterval:completion:</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sensorSettings" title="sensorSettings"></a>
+	<h3 class="subsubtitle method-title">sensorSettings</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The dictionary of sensor configuration attributes. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) NSDictionary *sensorSettings</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The dictionary of sensor configuration attributes. (read-only)</p><p>This property will be available after connect. For available options, see SBKBeaconSensorSettings.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/writeSensorSettings:completion:">- writeSensorSettings:completion:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/serialNumber" title="serialNumber"></a>
+	<h3 class="subsubtitle method-title">serialNumber</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The beacon&rsquo;s hardware serial number. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, copy) NSString *serialNumber</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The beacon&rsquo;s hardware serial number. (read-only)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shakeToLightOn" title="shakeToLightOn"></a>
+	<h3 class="subsubtitle method-title">shakeToLightOn</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Flag indicating switch state to shake to <a href="#//api/name/light">light</a> on.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) NSNumber *shakeToLightOn</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Flag indicating switch state to shake to <a href="#//api/name/light">light</a> on.</p><p>To shake to litght on is that you can use to ensure the device is working.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/temperature" title="temperature"></a>
+	<h3 class="subsubtitle method-title">temperature</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Temperature value in Celsius</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, copy) NSNumber *temperature</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Temperature value in Celsius</p><p>Sensor data can only be updated when the app is running in the foreground.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/workModel" title="workModel"></a>
+	<h3 class="subsubtitle method-title">workModel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current work model for the device. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) SBKBeaconWorkMode workModel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The current work model for the device. (read-only)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writePermissionStatus" title="writePermissionStatus"></a>
+	<h3 class="subsubtitle method-title">writePermissionStatus</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Indicates if the application has permission to write setting to the beacon.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) SBKBeaconWritePermissionStatus writePermissionStatus</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Indicates if the application has permission to write setting to the beacon.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/availableEnergySavingMode" title="availableEnergySavingMode"></a>
+	<h3 class="subsubtitle method-title">availableEnergySavingMode</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Which energy saving mode the beacon supports.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (SBKBeaconEnergySavingMode)availableEnergySavingMode</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Which energy saving mode the beacon supports.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/clearBroadcastKeyWithCompletion:" title="clearBroadcastKeyWithCompletion:"></a>
+	<h3 class="subsubtitle method-title">clearBroadcastKeyWithCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Clear the key to encrypt the broadcast packet.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)clearBroadcastKeyWithCompletion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the clear is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this clear operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Clear the key to encrypt the broadcast packet.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/clearWritePasswordWithCompletion:" title="clearWritePasswordWithCompletion:"></a>
+	<h3 class="subsubtitle method-title">clearWritePasswordWithCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Clear the beacon&rsquo;s password.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)clearWritePasswordWithCompletion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means clear successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this clear operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Clear the beacon&rsquo;s password.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectWithCompletion:" title="connectWithCompletion:"></a>
+	<h3 class="subsubtitle method-title">connectWithCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Establishes a connection to a beacon.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)connectWithCompletion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the connecting is completed. If error parameter is nil means connection has been established successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Establishes a connection to a beacon.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectionStatus" title="connectionStatus"></a>
+	<h3 class="subsubtitle method-title">connectionStatus</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current status of the connection.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (SBKBeaconConnectionStatus)connectionStatus</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <a href="../Constants/SBKBeaconConnectionStatus.html">SBKBeaconConnectionStatus</a> enum value.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The current status of the connection.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/disableAliBeaconWithCompletion:" title="disableAliBeaconWithCompletion:"></a>
+	<h3 class="subsubtitle method-title">disableAliBeaconWithCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Disable the AliBeacon broadcast.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)disableAliBeaconWithCompletion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this writing operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Disable the AliBeacon broadcast.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/disableEnhanceBroadcastWithCompletion:" title="disableEnhanceBroadcastWithCompletion:"></a>
+	<h3 class="subsubtitle method-title">disableEnhanceBroadcastWithCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<ul>
+<li>Disable the enhance broadcast.
+*</li>
+<li>@param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+*</li>
+<li>@return Can this writing operation be executed.
+*</li>
+<li>@discussion The Enhance broadcast it could make the SDK find this device as Sensoro device even if iOS device is locked,</li>
+<li><ul>
+<li>In other words, the screen was turned off. Normally, this device can be found by iOS device as the iBeacon device. If</li>
+</ul>
+</li>
+<li><ul>
+<li>you want to use SDK and find Sensoro device when the iOS device was locked, you need to enable this feature. And this</li>
+</ul>
+</li>
+<li><ul>
+<li>mode will increase the power consumption.</li>
+</ul>
+</li>
+</ul>
+
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)disableEnhanceBroadcastWithCompletion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<ul>
+<li>Disable the enhance broadcast.
+*</li>
+<li>@param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+*</li>
+<li>@return Can this writing operation be executed.
+*</li>
+<li>@discussion The Enhance broadcast it could make the SDK find this device as Sensoro device even if iOS device is locked,</li>
+<li><ul>
+<li>In other words, the screen was turned off. Normally, this device can be found by iOS device as the iBeacon device. If</li>
+</ul>
+</li>
+<li><ul>
+<li>you want to use SDK and find Sensoro device when the iOS device was locked, you need to enable this feature. And this</li>
+</ul>
+</li>
+<li><ul>
+<li>mode will increase the power consumption.</li>
+</ul>
+</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/disableSecondaryiBeaconWithCompletion:" title="disableSecondaryiBeaconWithCompletion:"></a>
+	<h3 class="subsubtitle method-title">disableSecondaryiBeaconWithCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Disable the secondary iBeacon broadcast.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)disableSecondaryiBeaconWithCompletion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this writing operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Disable the secondary iBeacon broadcast.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/disableiBeaconWithCompletion:" title="disableiBeaconWithCompletion:"></a>
+	<h3 class="subsubtitle method-title">disableiBeaconWithCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Disable the iBeacon broadcast.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)disableiBeaconWithCompletion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this writing operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Disable the iBeacon broadcast.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/disconnect" title="disconnect"></a>
+	<h3 class="subsubtitle method-title">disconnect</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cancels an active or pending connection to a beacon.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)disconnect</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Cancels an active or pending connection to a beacon.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/eddystonePackage:enable:completion:" title="eddystonePackage:enable:completion:"></a>
+	<h3 class="subsubtitle method-title">eddystonePackage:enable:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>enable some package of eddystone.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)eddystonePackage:(EddystonePackageType)<em>package</em> enable:(BOOL)<em>enable</em> completion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>package</em></dt>
+			<dd><p>which package will enbaled or disabled;</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>enable</em></dt>
+			<dd><p>package is enbaled or disabled. YES : enable, NO : disable;</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this writing operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>enable some package of eddystone.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enableAliBeaconWithCompletion:" title="enableAliBeaconWithCompletion:"></a>
+	<h3 class="subsubtitle method-title">enableAliBeaconWithCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enable the AliBeacon broadcast.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)enableAliBeaconWithCompletion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this writing operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Enable the AliBeacon broadcast.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enableEnhanceBroadcastWithCompletion:" title="enableEnhanceBroadcastWithCompletion:"></a>
+	<h3 class="subsubtitle method-title">enableEnhanceBroadcastWithCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<ul>
+<li>Enable the enhance broadcast.
+*</li>
+<li>@param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+*</li>
+<li>@return Can this writing operation be executed.
+*</li>
+<li>@discussion The Enhance broadcast it could make the SDK find this device as Sensoro device even if iOS device is locked,</li>
+<li><ul>
+<li>In other words, the screen was turned off. Normally, this device can be found by iOS device as the iBeacon device. If</li>
+</ul>
+</li>
+<li><ul>
+<li>you want to use SDK to find Sensoro device when the iOS device was locked, you need to enable this feature. And this</li>
+</ul>
+</li>
+<li><ul>
+<li>mode will increase the power consumption.</li>
+</ul>
+</li>
+</ul>
+
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)enableEnhanceBroadcastWithCompletion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<ul>
+<li>Enable the enhance broadcast.
+*</li>
+<li>@param completion The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+*</li>
+<li>@return Can this writing operation be executed.
+*</li>
+<li>@discussion The Enhance broadcast it could make the SDK find this device as Sensoro device even if iOS device is locked,</li>
+<li><ul>
+<li>In other words, the screen was turned off. Normally, this device can be found by iOS device as the iBeacon device. If</li>
+</ul>
+</li>
+<li><ul>
+<li>you want to use SDK to find Sensoro device when the iOS device was locked, you need to enable this feature. And this</li>
+</ul>
+</li>
+<li><ul>
+<li>mode will increase the power consumption.</li>
+</ul>
+</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enableSecondaryiBeaconWithCompletion:" title="enableSecondaryiBeaconWithCompletion:"></a>
+	<h3 class="subsubtitle method-title">enableSecondaryiBeaconWithCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enable the secondary iBeacon broadcast.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)enableSecondaryiBeaconWithCompletion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this writing operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Enable the secondary iBeacon broadcast.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enableiBeaconWithCompletion:" title="enableiBeaconWithCompletion:"></a>
+	<h3 class="subsubtitle method-title">enableiBeaconWithCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enable the iBeacon broadcast.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)enableiBeaconWithCompletion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this writing operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Enable the iBeacon broadcast.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/flashLightWithCommand:repeat:completion:" title="flashLightWithCommand:repeat:completion:"></a>
+	<h3 class="subsubtitle method-title">flashLightWithCommand:repeat:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>flash <a href="#//api/name/light">light</a> of SmartBeacon.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)flashLightWithCommand:(UInt8)<em>command</em> repeat:(UInt8)<em>repeatCount</em> completion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>command</em></dt>
+			<dd><p>If the bit of command is 1, then this <a href="#//api/name/light">light</a> will turn on one times, if 0 ,the <a href="#//api/name/light">light</a> turn off.
+you can use custom command, or use @see <a href="../Constants/SBKCommonLigthFlashCommand.html">SBKCommonLigthFlashCommand</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>repeatCount</em></dt>
+			<dd><p>The count that command was repeat.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this writing operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>flash <a href="#//api/name/light">light</a> of SmartBeacon.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isAccelerometerAvailable" title="isAccelerometerAvailable"></a>
+	<h3 class="subsubtitle method-title">isAccelerometerAvailable</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Flag indicating whether accelerometer sensor is available.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isAccelerometerAvailable</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Flag indicating whether accelerometer sensor is available.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isBeacon" title="isBeacon"></a>
+	<h3 class="subsubtitle method-title">isBeacon</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Flag indicating whether this beacon has beacon information, uuid, major, minor, <a href="#//api/name/proximity">proximity</a>, <a href="#//api/name/accuracy">accuracy</a> etc..</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isBeacon</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Flag indicating whether this beacon has beacon information, uuid, major, minor, <a href="#//api/name/proximity">proximity</a>, <a href="#//api/name/accuracy">accuracy</a> etc..</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isLightSensorAvailable" title="isLightSensorAvailable"></a>
+	<h3 class="subsubtitle method-title">isLightSensorAvailable</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Flag indicating whether <a href="#//api/name/light">light</a> sensor is available.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isLightSensorAvailable</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Flag indicating whether <a href="#//api/name/light">light</a> sensor is available.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isSensor" title="isSensor"></a>
+	<h3 class="subsubtitle method-title">isSensor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Flag indicating whether this beacon has sensor information, temprature, <a href="#//api/name/light">light</a>, accelerometer etc..</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isSensor</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Flag indicating whether this beacon has sensor information, temprature, <a href="#//api/name/light">light</a>, accelerometer etc..</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isTemperatureSensorAvailable" title="isTemperatureSensorAvailable"></a>
+	<h3 class="subsubtitle method-title">isTemperatureSensorAvailable</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Flag indicating whether <a href="#//api/name/temperature">temperature</a> sensor is available.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isTemperatureSensorAvailable</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Flag indicating whether <a href="#//api/name/temperature">temperature</a> sensor is available.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reloadSensorDataWithCompletion:" title="reloadSensorDataWithCompletion:"></a>
+	<h3 class="subsubtitle method-title">reloadSensorDataWithCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Causes beacon to reload <a href="#//api/name/temperature">temperature</a> and <a href="#//api/name/light">light</a> sensors data immediately.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)reloadSensorDataWithCompletion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the operation is completed. If error parameter is nil means success.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Causes beacon to reload <a href="#//api/name/temperature">temperature</a> and <a href="#//api/name/light">light</a> sensors data immediately.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requireWritePermissionWithPassword:completion:" title="requireWritePermissionWithPassword:completion:"></a>
+	<h3 class="subsubtitle method-title">requireWritePermissionWithPassword:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>You should use this method to request write permission if <a href="#//api/name/writePermissionStatus">writePermissionStatus</a> property is restricted.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)requireWritePermissionWithPassword:(NSString *)<em>password</em> completion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>password</em></dt>
+			<dd><p>Password string.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the operation is completed. If error parameter is nil means success.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>You should use this method to request write permission if <a href="#//api/name/writePermissionStatus">writePermissionStatus</a> property is restricted.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/writePermissionStatus">@property writePermissionStatus</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resetAccelerometerCountWithCompletion:" title="resetAccelerometerCountWithCompletion:"></a>
+	<h3 class="subsubtitle method-title">resetAccelerometerCountWithCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Resets accelerometer counter value to zero.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)resetAccelerometerCountWithCompletion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Resets accelerometer counter value to zero.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resetToFactorySettingsWithCompletion:" title="resetToFactorySettingsWithCompletion:"></a>
+	<h3 class="subsubtitle method-title">resetToFactorySettingsWithCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Resets beacon to factory settings. This will reset proximityUUID, major, minor, <a href="#//api/name/baseSettings">baseSettings</a> and <a href="#//api/name/sensorSettings">sensorSettings</a> to original values.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)resetToFactorySettingsWithCompletion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this writing operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Resets beacon to factory settings. This will reset proximityUUID, major, minor, <a href="#//api/name/baseSettings">baseSettings</a> and <a href="#//api/name/sensorSettings">sensorSettings</a> to original values.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/switchToPureEddystoneModeWithCompletion:" title="switchToPureEddystoneModeWithCompletion:"></a>
+	<h3 class="subsubtitle method-title">switchToPureEddystoneModeWithCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<ul>
+<li>flash <a href="#//api/name/light">light</a> of SmartBeacon. now it is deprecated.
+*</li>
+<li>@param completion  The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+*</li>
+<li>@return Switch device to eddystone fully support mode, and when it was in this mode, the SDK couldn&rsquo;t find this device and
+ couldn&rsquo;t switch back to normal mode.</li>
+</ul>
+
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)switchToPureEddystoneModeWithCompletion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<ul>
+<li>flash <a href="#//api/name/light">light</a> of SmartBeacon. now it is deprecated.
+*</li>
+<li>@param completion  The block to execute after the writing is completed. If error parameter is nil means writing successfully.
+*</li>
+<li>@return Switch device to eddystone fully support mode, and when it was in this mode, the SDK couldn&rsquo;t find this device and
+ couldn&rsquo;t switch back to normal mode.</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateWritePassword:completion:" title="updateWritePassword:completion:"></a>
+	<h3 class="subsubtitle method-title">updateWritePassword:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Changes the beacon&rsquo;s password.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)updateWritePassword:(NSString *)<em>password</em> completion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>password</em></dt>
+			<dd><p>New password string.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this writing operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Changes the beacon&rsquo;s password.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeBaseSettings:completion:" title="writeBaseSettings:completion:"></a>
+	<h3 class="subsubtitle method-title">writeBaseSettings:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Updates base settings of this beacon.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)writeBaseSettings:(NSDictionary *)<em>settings</em> completion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>settings</em></dt>
+			<dd><p>Configuration attributes you try to update in a dictionary. For available options, see SBKBeaconBaseSettings.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this writing operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Updates base settings of this beacon.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeBroadcastKey:completion:" title="writeBroadcastKey:completion:"></a>
+	<h3 class="subsubtitle method-title">writeBroadcastKey:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Updates the key to encrypt the broadcast packet.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)writeBroadcastKey:(NSString *)<em>key</em> completion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>the key to encrypt the broadcast packet;</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this writing operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Updates the key to encrypt the broadcast packet.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeEddystoneBID:completion:" title="writeEddystoneBID:completion:"></a>
+	<h3 class="subsubtitle method-title">writeEddystoneBID:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>write eddystone bid of UID package.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)writeEddystoneBID:(NSString *)<em>bidString</em> completion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bidString</em></dt>
+			<dd><p>bid presented by hex string;</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this writing operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>write eddystone bid of UID package.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeEddystoneNID:completion:" title="writeEddystoneNID:completion:"></a>
+	<h3 class="subsubtitle method-title">writeEddystoneNID:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>write eddystone nid of UID package.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)writeEddystoneNID:(NSString *)<em>nidString</em> completion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nidString</em></dt>
+			<dd><p>nid presented by hex string;</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this writing operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>write eddystone nid of UID package.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeEddystoneTLMInterval:completion:" title="writeEddystoneTLMInterval:completion:"></a>
+	<h3 class="subsubtitle method-title">writeEddystoneTLMInterval:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>write eddystone interval of TLM package.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)writeEddystoneTLMInterval:(EddystoneTLMInterval)<em>interval</em> completion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>interval</em></dt>
+			<dd><p>broadcast on this interval;</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this writing operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>write eddystone interval of TLM package.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeEddystoneUrl:completion:" title="writeEddystoneUrl:completion:"></a>
+	<h3 class="subsubtitle method-title">writeEddystoneUrl:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Write a url to eddystone.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)writeEddystoneUrl:(NSString *)<em>url</em> completion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The url that eddystone broadcast with url frame;</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this writing operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Write a url to eddystone.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeMajor:minor:completion:" title="writeMajor:minor:completion:"></a>
+	<h3 class="subsubtitle method-title">writeMajor:minor:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Updates major and minor of this beacon.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)writeMajor:(NSNumber *)<em>major</em> minor:(NSNumber *)<em>minor</em> completion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>major</em></dt>
+			<dd><p>The major value.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>minor</em></dt>
+			<dd><p>The minor value.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this writing operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Updates major and minor of this beacon.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeProximityUUID:completion:" title="writeProximityUUID:completion:"></a>
+	<h3 class="subsubtitle method-title">writeProximityUUID:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Updates <a href="#//api/name/proximity">proximity</a> UUID of this beacon.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)writeProximityUUID:(NSUUID *)<em>proximityUUID</em> completion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>proximityUUID</em></dt>
+			<dd><p>Proximity UUID in NSUUID object.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this writing operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Updates <a href="#//api/name/proximity">proximity</a> UUID of this beacon.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeSecondaryMajor:secondaryMinor:completion:" title="writeSecondaryMajor:secondaryMinor:completion:"></a>
+	<h3 class="subsubtitle method-title">writeSecondaryMajor:secondaryMinor:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Updates secondary major and secondary minor of this beacon, only firmware 3.3.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)writeSecondaryMajor:(NSNumber *)<em>major</em> secondaryMinor:(NSNumber *)<em>minor</em> completion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>major</em></dt>
+			<dd><p>The major value.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>minor</em></dt>
+			<dd><p>The minor value.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this writing operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Updates secondary major and secondary minor of this beacon, only firmware 3.3.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeSecondaryProximityUUID:completion:" title="writeSecondaryProximityUUID:completion:"></a>
+	<h3 class="subsubtitle method-title">writeSecondaryProximityUUID:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Updates secondary <a href="#//api/name/proximity">proximity</a> UUID of this beacon, only firmware 3.3.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)writeSecondaryProximityUUID:(NSUUID *)<em>proximityUUID</em> completion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>proximityUUID</em></dt>
+			<dd><p>Proximity UUID in NSUUID object.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this writing operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Updates secondary <a href="#//api/name/proximity">proximity</a> UUID of this beacon, only firmware 3.3.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeSecureBroadcastInterval:completion:" title="writeSecureBroadcastInterval:completion:"></a>
+	<h3 class="subsubtitle method-title">writeSecureBroadcastInterval:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Updates UMM Change interval.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)writeSecureBroadcastInterval:(SBKBeaconSecureBroadcastInterval)<em>interval</em> completion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>interval</em></dt>
+			<dd><p>The Secure Broadcast change interval. it is enum of @see <a href="../Constants/SBKBeaconSecureBroadcastInterval.html">SBKBeaconSecureBroadcastInterval</a>;</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this writing operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Updates UMM Change interval.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeSensorSettings:completion:" title="writeSensorSettings:completion:"></a>
+	<h3 class="subsubtitle method-title">writeSensorSettings:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Updates sensor settings of this beacon.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)writeSensorSettings:(NSDictionary *)<em>settings</em> completion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>settings</em></dt>
+			<dd><p>Configuration attributes you try to update in a dictionary. For available options, see SBKBeaconSensorSettings.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this writing operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Updates sensor settings of this beacon.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeShakeToLightOnState:completion:" title="writeShakeToLightOnState:completion:"></a>
+	<h3 class="subsubtitle method-title">writeShakeToLightOnState:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Write the state of switch to &ldquo;shake to <a href="#//api/name/light">light</a> on&rdquo;.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)writeShakeToLightOnState:(BOOL)<em>state</em> completion:(SBKBeaconCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>state</em></dt>
+			<dd><p>YES: turn on this switch, NO: turn off this switch.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>The block to execute after the writing is completed. If error parameter is nil means writing successfully.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Can this operation be executed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Write the state of switch to &ldquo;shake to <a href="#//api/name/light">light</a> on&rdquo;.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBKBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+                    
+                    
+
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2017 Sensoro, Inc. All rights reserved. (Last updated: 2017-01-03)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
