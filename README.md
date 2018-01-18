@@ -15,7 +15,7 @@ SDK User Guid：
 
 **Note**
 
-Because the SDK need more authorization, if you don’t need those functionality in list, it is recommended to use standard iBeacon API and Eddystone API.
+Because the SDK need more authorization, if you don’t need these functionalities in list, it is recommended to use standard iBeacon API and Eddystone API.
 
 	• To configure the device dynamically.
 	• To get sensor information and battery info;
