@@ -26,8 +26,9 @@
     //[[SBKBeaconManager sharedInstance] requestWhenInUseAuthorization];
     
     //测试用防蹭用密钥，期限到2016-01-01
-    [[SBKBeaconManager sharedInstance] addBroadcastKey:@"01Y2GLh1yw3+6Aq0RsnOQ8xNvXTnDUTTLE937Yedd/DnlcV0ixCWo7JQ+VEWRSya80yea6u5aWgnW1ACjKNzFnig=="];
-    
+//    [[SBKBeaconManager sharedInstance] addBroadcastKey:@"01Y2GLh1yw3+6Aq0RsnOQ8xNvXTnDUTTLE937Yedd/DnlcV0ixCWo7JQ+VEWRSya80yea6u5aWgnW1ACjKNzFnig=="];
+    [[SBKBeaconManager sharedInstance] addBroadcastKey:@"01vZbPnOagiRTVFVRjOusaWLqhIw4jVmVRI3a4w2T+qTGhaCyvRKHhYBK7RDSPFXYOtJvReQjZutDtnDMmIHO0RA=="];
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[SBKDViewController alloc] initWithStyle:UITableViewStylePlain]];
