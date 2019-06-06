@@ -7,7 +7,7 @@ ReActive App Example see this project [ReActive App](https://github.com/Sensoro/
 
 SDK User Guid：
 
-* English Version ：[User Guid](http://www.sensoro.com/en/developer#ios)
+* English Version ：[User Guide](http://www.sensoro.com/en/developer#ios)
 * 中文版本：[使用文档](http://www.sensoro.com/zh/developer#ios)
 * Change List: 
 	* 中文: [Change List](./changelist.md)
